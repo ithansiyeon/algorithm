@@ -34,5 +34,7 @@
   <li>38. 핸드폰 번호 가리기</li>
   <li>39. 행렬의 덧셈</li>
   <li>40. x만큼 간격이 있는 n개의 숫자</li>
+  <li>41. 직사각형 별 찍기</li>
+  <li>41. Summer/Winter Coding(~2018)</li>
 </list>
  
