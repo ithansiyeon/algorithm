@@ -36,5 +36,6 @@
   <li>40. x만큼 간격이 있는 n개의 숫자</li>
   <li>41. 직사각형 별 찍기</li>
   <li>41. Summer/Winter Coding(~2018)</li>
+  <li>42. 2018 KAKAO BLIND RECRUITMENT [1차]비밀지도</li>
 </list>
  
