@@ -39,5 +39,6 @@
   <li>42. 2018 KAKAO BLIND RECRUITMENT [1차]비밀지도</li>
   <li>43. 2019 KAKAO BLIND RECRUITMENT 실패율</li>
   <li>44. 가장 큰 수</li>
+  <li>45. 최댓값과 최소값</li>
 </list>
  
