@@ -35,10 +35,13 @@
   <li>39. 행렬의 덧셈</li>
   <li>40. x만큼 간격이 있는 n개의 숫자</li>
   <li>41. 직사각형 별 찍기</li>
-  <li>41. Summer/Winter Coding(~2018)</li>
-  <li>42. 2018 KAKAO BLIND RECRUITMENT [1차]비밀지도</li>
-  <li>43. 2019 KAKAO BLIND RECRUITMENT 실패율</li>
-  <li>44. 가장 큰 수</li>
-  <li>45. 최댓값과 최소값</li>
+  <li>42. Summer/Winter Coding(~2018)</li>
+  <li>43. 2018 KAKAO BLIND RECRUITMENT [1차]비밀지도</li>
+  <li>44. 2019 KAKAO BLIND RECRUITMENT 실패율</li>
+  <li>45. 가장 큰 수</li>
+  <li>46. 최댓값과 최소값</li>
+  <li>47. 전화번호 목록</li>
+  <li>48. 주식가격</li>
+  <li>49. 기능개발</li>
 </list>
  
