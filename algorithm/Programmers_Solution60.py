@@ -40,21 +40,3 @@ def solution(citations):
     return answer
 
 print(solution([2, 7, 5]))
- # => 4
-
-# def solution(citations):
-#     answer = 0
-#     cnt = 0
-#
-#     citations.sort(reverse=True)
-#     for i in range(1,(citations[len(citations)-1]+citations[0])//2+1):
-#         for j in range(len(citations)):
-#             if citations[j]>=i:
-#                 cnt+=1
-#         if cnt == i:
-#             return cnt
-#         else: cnt=0
-#
-#     # print(citations)
-#
-#     return answer
