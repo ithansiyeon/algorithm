@@ -19,8 +19,6 @@
 # [70, 80, 50]	100	3
 
 def solution(people, limit):
-    answer = 1
-    sum = 0
     cnt = 0
     people = sorted(people)
     print(people)
