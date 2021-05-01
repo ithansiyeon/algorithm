@@ -85,5 +85,6 @@
   <li>89. n진수 게임</li>
   <li>90. 파일명 정렬</li>
   <li>91. 2021 KAKAO BLIND RECRUITMENT 신규 아이디 추천</li>
+  <li>92. 2021 카카오 recruit - 순위 검색</li>
 </list>
  
