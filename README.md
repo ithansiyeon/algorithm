@@ -5,6 +5,7 @@
 알고리즘 테스트에 통과한 문제들입니다.
 ### :pushpin: 푼 문제 순서
 <list>
+  <li>8. 방금그곡</li>
   <li>9. 괄호 </li>
   <li>10. 하노이의 탑</li>
   <li>11. 수식 최대화</li>
@@ -90,6 +91,5 @@
   <li>91. 2021 KAKAO BLIND RECRUITMENT 신규 아이디 추천</li>
   <li>92. 2021 카카오 recruit - 순위 검색</li>
   <li>93. Summer/Winter Coding(~2018) 방문 길이</li>
-  <li>94. 방금그곡</li>
 </list>
  
