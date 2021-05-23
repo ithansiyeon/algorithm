@@ -29,8 +29,8 @@ def solution(numbers):
         if div < 2:
             answer.append(div + 1)
             continue
-
         binary = []
+        print(binary)
         while div:
             div, mod = divmod(div, 2)
             binary.append(mod)
@@ -44,13 +44,15 @@ def solution(numbers):
                 binary[i:i + 2] = [0, 1]
                 break
         else:
+            # 대신 for문 바깥쪽에 else문을 추가해서, break가 발생하지 않았을때의 동작에 대해 기술했다.
             binary[-1] = 0
             binary.append(1)
 
         base10 = 0
         for i in range(len(binary)):
             base10 += binary[i] * 2 ** i
+            # **는 몇 승
         answer.append(base10)
     return answer
 
-print(solution([2,7]))
+print(solution([9]))
