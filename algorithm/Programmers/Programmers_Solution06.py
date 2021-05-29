@@ -18,5 +18,4 @@ def solution(n, a, b):
             b = (b + 1) / 2
     return answer
 
-
 solution(8, 4, 7)
