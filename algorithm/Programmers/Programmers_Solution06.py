@@ -1,5 +1,5 @@
 def solution(n, a, b):
-    answer = 0 
+    answer = 0
     while True:
         answer += 1
         if a > b and a % 2 == 0:
