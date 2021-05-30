@@ -1,60 +1,58 @@
- #  레스토랑을 운영하던 스카피는 코로나19로 인한 불경기를 극복하고자 메뉴를 새로 구성하려고 고민하고 있습니다.
-# 기존에는 단품으로만 제공하던 메뉴를 조합해서 코스요리 형태로 재구성해서 새로운 메뉴를 제공하기로 결정했습니다. 어떤 단품메뉴들을 조합해서 코스요리 메뉴로 구성하면 좋을 지 고민하던 "스카피"는 이전에 각 손님들이 주문할 때 가장 많이 함께 주문한 단품메뉴들을 코스요리 메뉴로 구성하기로 했습니다.
-# 단, 코스요리 메는 최소 2가지 이상의 단품메뉴로 구성하려고 합니다. 또한, 최소 2명 이상의 손님으로부터 주문된 단품메뉴 조합에 대해서만 코스요리 메뉴 후보에 포함하기로 했습니다.
+# 프렌즈대학교 컴퓨터공학과 조교인 제이지는 네오 학과장님의 지시로, 학생들의 인적사항을 정리하는 업무를 담당하게 되었다.
 #
-# 예를 들어, 손님 6명이 주문한 단품메뉴들의 조합이 다음과 같다면,
-# (각 손님은 단품메뉴를 2개 이상 주문해야 하며, 각 단품메뉴는 A ~ Z의 알파벳 대문자로 표기합니다.)
+# 그의 학부 시절 프로그래밍 경험을 되살려, 모든 인적사항을 데이터베이스에 넣기로 하였고, 이를 위해 정리를 하던 중에 후보키(Candidate Key)에 대한 고민이 필요하게 되었다.
 #
-# 손님 번호	주문한 단품메뉴 조합
-# 1번 손님	A, B, C, F, G
-# 2번 손님	A, C
-# 3번 손님	C, D, E
-# 4번 손님	A, C, D, E
-# 5번 손님	B, C, F, G
-# 6번 손님	A, C, D, E, H
-# 가장 많이 함께 주문된 단품메뉴 조합에 따라 "스카피"가 만들게 될 코스요리 메뉴 구성 후보는 다음과 같습니다.
+# 후보키에 대한 내용이 잘 기억나지 않던 제이지는, 정확한 내용을 파악하기 위해 데이터베이스 관련 서적을 확인하여 아래와 같은 내용을 확인하였다.
 #
-# 코스 종류	메뉴 구성	설명
-# 요리 2개 코스	A, C	1번, 2번, 4번, 6번 손님으로부터 총 4번 주문됐습니다.
-# 요리 3개 코스	C, D, E	3번, 4번, 6번 손님으로부터 총 3번 주문됐습니다.
-# 요리 4개 코스	B, C, F, G	1번, 5번 손님으로부터 총 2번 주문됐습니다.
-# 요리 4개 코스	A, C, D, E	4번, 6번 손님으로부터 총 2번 주문됐습니다.
-# [문제]
-# 각 손님들이 주문한 단품메뉴들이 문자열 형식으로 담긴 배열 orders, "스카피"가 추가하고 싶어하는 코스요리를 구성하는 단품메뉴들의 갯수가 담긴 배열 course가 매개변수로 주어질 때, "스카피"가 새로 추가하게 될 코스요리의 메뉴 구성을 문자열 형태로 배열에 담아 return 하도록 solution 함수를 완성해 주세요.
+# 관계 데이터베이스에서 릴레이션(Relation)의 튜플(Tuple)을 유일하게 식별할 수 있는 속성(Attribute) 또는 속성의 집합 중, 다음 두 성질을 만족하는 것을 후보 키(Candidate Key)라고 한다.
+# 유일성(uniqueness) : 릴레이션에 있는 모든 튜플에 대해 유일하게 식별되어야 한다.
+# 최소성(minimality) : 유일성을 가진 키를 구성하는 속성(Attribute) 중 하나라도 제외하는 경우 유일성이 깨지는 것을 의미한다. 즉, 릴레이션의 모든 튜플을 유일하게 식별하는 데 꼭 필요한 속성들로만 구성되어야 한다.
+# 제이지를 위해, 아래와 같은 학생들의 인적사항이 주어졌을 때, 후보 키의 최대 개수를 구하라.
 #
-# [제한사항]
-# orders 배열의 크기는 2 이상 20 이하입니다.
-# orders 배열의 각 원소는 크기가 2 이상 10 이하인 문자열입니다.
-# 각 문자열은 알파벳 대문자로만 이루어져 있습니다.
-# 각 문자열에는 같은 알파벳이 중복해서 들어있지 않습니다.
-# course 배열의 크기는 1 이상 10 이하입니다.
-# course 배열의 각 원소는 2 이상 10 이하인 자연수가 오름차순으로 정렬되어 있습니다.
-# course 배열에는 같은 값이 중복해서 들어있지 않습니다.
-# 정답은 각 코스요리 메뉴의 구성을 문자열 형식으로 배열에 담아 사전 순으로 오름차순 정렬해서 return 해주세요.
-# 배열의 각 원소에 저장된 문자열 또한 알파벳 오름차순으로 정렬되어야 합니다.
-# 만약 가장 많이 함께 주문된 메뉴 구성이 여러 개라면, 모두 배열에 담아 return 하면 됩니다.
-# orders와 course 매개변수는 return 하는 배열의 길이가 1 이상이 되도록 주어집니다.
-# [입출력 예]
-# orders	course	result
-# ["ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"]	[2,3,4]	["AC", "ACDE", "BCFG", "CDE"]
-# ["ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"]	[2,3,5]	["ACD", "AD", "ADE", "CD", "XYZ"]
-# ["XYZ", "XWY", "WXA"]	[2,3,4]	["WX", "XY"]
+# cand_key1.png
+#
+# 위의 예를 설명하면, 학생의 인적사항 릴레이션에서 모든 학생은 각자 유일한 "학번"을 가지고 있다. 따라서 "학번"은 릴레이션의 후보 키가 될 수 있다.
+# 그다음 "이름"에 대해서는 같은 이름("apeach")을 사용하는 학생이 있기 때문에, "이름"은 후보 키가 될 수 없다. 그러나, 만약 ["이름", "전공"]을 함께 사용한다면 릴레이션의 모든 튜플을 유일하게 식별 가능하므로 후보 키가 될 수 있게 된다.
+# 물론 ["이름", "전공", "학년"]을 함께 사용해도 릴레이션의 모든 튜플을 유일하게 식별할 수 있지만, 최소성을 만족하지 못하기 때문에 후보 키가 될 수 없다.
+# 따라서, 위의 학생 인적사항의 후보키는 "학번", ["이름", "전공"] 두 개가 된다.
+#
+# 릴레이션을 나타내는 문자열 배열 relation이 매개변수로 주어질 때, 이 릴레이션에서 후보 키의 개수를 return 하도록 solution 함수를 완성하라.
+#
+# 제한사항
+# relation은 2차원 문자열 배열이다.
+# relation의 컬럼(column)의 길이는 1 이상 8 이하이며, 각각의 컬럼은 릴레이션의 속성을 나타낸다.
+# relation의 로우(row)의 길이는 1 이상 20 이하이며, 각각의 로우는 릴레이션의 튜플을 나타낸다.
+# relation의 모든 문자열의 길이는 1 이상 8 이하이며, 알파벳 소문자와 숫자로만 이루어져 있다.
+# relation의 모든 튜플은 유일하게 식별 가능하다.(즉, 중복되는 튜플은 없다.)
+# 입출력 예
+# relation	result
+# [["100","ryan","music","2"],["200","apeach","math","2"],["300","tube","computer","3"],["400","con","computer","4"],["500","muzi","music","3"],["600","apeach","music","2"]]	2
+# 입출력 예 설명
+# 입출력 예 #1
+# 문제에 주어진 릴레이션과 같으며, 후보 키는 2개이다.
 
+from collections import deque
 from itertools import combinations
-from collections import Counter
 
 
-def solution(orders, course):
-    answer = []
-    for c in course:
-        temp = []
-        for order in orders:
-            combi = combinations(sorted(order), c)
-            temp += combi
-        counter = Counter(temp)
-        if len(counter) != 0 and max(counter.values()) != 1:
-            answer += [''.join(f) for f in counter if counter[f] == max(counter.values())]
+def solution(relation):
+    n_row = len(relation)
+    n_col = len(relation[0])
 
-    return sorted(answer)
+    candidates = []
+    for i in range(1, n_col + 1):
+        candidates.extend(combinations(range(n_col), i))
 
-solution(["ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"],[2,3,4])
+    final = []
+    for keys in candidates:
+        tmp = [tuple([item[key] for key in keys]) for item in relation]
+        if len(set(tmp)) == n_row:
+            final.append(keys)
+
+    answer = set(final[:])
+    for i in range(len(final)):
+        for j in range(i + 1, len(final)):
+            if len(final[i]) == len(set(final[i]).intersection(set(final[j]))):
+                answer.discard(final[j])
+
+    return len(answer)

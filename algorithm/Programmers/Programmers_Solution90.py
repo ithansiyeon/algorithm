@@ -1,59 +1,144 @@
-# 파일명 정렬
-# 세 차례의 코딩 테스트와 두 차례의 면접이라는 기나긴 블라인드 공채를 무사히 통과해 카카오에 입사한 무지는 파일 저장소 서버 관리를 맡게 되었다.
+# 카카오에 입사한 신입 개발자 네오는 "카카오계정개발팀"에 배치되어, 카카오 서비스에 가입하는 유저들의 아이디를 생성하는 업무를 담당하게 되었습니다.
+# "네오"에게 주어진 첫 업무는 새로 가입하는 유저들이 카카오 아이디 규칙에 맞지 않는 아이디를 입력했을 때,
+# 입력된 아이디와 유사하면서 규칙에 맞는 아이디를 추천해주는 프로그램을 개발하는 것입니다.
+# 다음은 카카오 아이디의 규칙입니다.
 #
-# 저장소 서버에는 프로그램의 과거 버전을 모두 담고 있어, 이름 순으로 정렬된 파일 목록은 보기가 불편했다. 파일을 이름 순으로 정렬하면 나중에 만들어진 ver-10.zip이 ver-9.zip보다 먼저 표시되기 때문이다.
+# 아이디의 길이는 3자 이상 15자 이하여야 합니다.
+# 아이디는 알파벳 소문자, 숫자, 빼기(-), 밑줄(_), 마침표(.) 문자만 사용할 수 있습니다.
+# 단, 마침표(.)는 처음과 끝에 사용할 수 없으며 또한 연속으로 사용할 수 없습니다.
+# "네오"는 다음과 같이 7단계의 순차적인 처리 과정을 통해 신규 유저가 입력한 아이디가 카카오 아이디 규칙에 맞는 지 검사하고 규칙에 맞지 않은 경우 규칙에 맞는 새로운 아이디를 추천해 주려고 합니다.
+# 신규 유저가 입력한 아이디가 new_id 라고 한다면,
 #
-# 버전 번호 외에도 숫자가 포함된 파일 목록은 여러 면에서 관리하기 불편했다. 예컨대 파일 목록이 ["img12.png", "img10.png", "img2.png", "img1.png"]일 경우, 일반적인 정렬은 ["img1.png", "img10.png", "img12.png", "img2.png"] 순이 되지만, 숫자 순으로 정렬된 ["img1.png", "img2.png", "img10.png", img12.png"] 순이 훨씬 자연스럽다.
+# 1단계 new_id의 모든 대문자를 대응되는 소문자로 치환합니다.
+# 2단계 new_id에서 알파벳 소문자, 숫자, 빼기(-), 밑줄(_), 마침표(.)를 제외한 모든 문자를 제거합니다.
+# 3단계 new_id에서 마침표(.)가 2번 이상 연속된 부분을 하나의 마침표(.)로 치환합니다.
+# 4단계 new_id에서 마침표(.)가 처음이나 끝에 위치한다면 제거합니다.
+# 5단계 new_id가 빈 문자열이라면, new_id에 "a"를 대입합니다.
+# 6단계 new_id의 길이가 16자 이상이면, new_id의 첫 15개의 문자를 제외한 나머지 문자들을 모두 제거합니다.
+#      만약 제거 후 마침표(.)가 new_id의 끝에 위치한다면 끝에 위치한 마침표(.) 문자를 제거합니다.
+# 7단계 new_id의 길이가 2자 이하라면, new_id의 마지막 문자를 new_id의 길이가 3이 될 때까지 반복해서 끝에 붙입니다.
+# 예를 들어, new_id 값이 "...!@BaT#*..y.abcdefghijklm" 라면, 위 7단계를 거치고 나면 new_id는 아래와 같이 변경됩니다.
 #
-# 무지는 단순한 문자 코드 순이 아닌, 파일명에 포함된 숫자를 반영한 정렬 기능을 저장소 관리 프로그램에 구현하기로 했다.
+# 1단계 대문자 'B'와 'T'가 소문자 'b'와 't'로 바뀌었습니다.
+# "...!@BaT#*..y.abcdefghijklm" → "...!@bat#*..y.abcdefghijklm"
 #
-# 소스 파일 저장소에 저장된 파일명은 100 글자 이내로, 영문 대소문자, 숫자, 공백(" "), 마침표("."), 빼기 부호("-")만으로 이루어져 있다. 파일명은 영문자로 시작하며, 숫자를 하나 이상 포함하고 있다.
+# 2단계 '!', '@', '#', '*' 문자가 제거되었습니다.
+# "...!@bat#*..y.abcdefghijklm" → "...bat..y.abcdefghijklm"
 #
-# 파일명은 크게 HEAD, NUMBER, TAIL의 세 부분으로 구성된다.
+# 3단계 '...'와 '..' 가 '.'로 바뀌었습니다.
+# "...bat..y.abcdefghijklm" → ".bat.y.abcdefghijklm"
 #
-# HEAD는 숫자가 아닌 문자로 이루어져 있으며, 최소한 한 글자 이상이다.
-# NUMBER는 한 글자에서 최대 다섯 글자 사이의 연속된 숫자로 이루어져 있으며, 앞쪽에 0이 올 수 있다. 0부터 99999 사이의 숫자로, 00000이나 0101 등도 가능하다.
-# TAIL은 그 나머지 부분으로, 여기에는 숫자가 다시 나타날 수도 있으며, 아무 글자도 없을 수 있다.
-# 파일명	HEAD	NUMBER	TAIL
-# foo9.txt	foo	9	.txt
-# foo010bar020.zip	foo	010	bar020.zip
-# F-15	F-	15	(빈 문자열)
-# 파일명을 세 부분으로 나눈 후, 다음 기준에 따라 파일명을 정렬한다.
+# 4단계 아이디의 처음에 위치한 '.'가 제거되었습니다.
+# ".bat.y.abcdefghijklm" → "bat.y.abcdefghijklm"
 #
-# 파일명은 우선 HEAD 부분을 기준으로 사전 순으로 정렬한다. 이때, 문자열 비교 시 대소문자 구분을 하지 않는다. MUZI와 muzi, MuZi는 정렬 시에 같은 순서로 취급된다.
-# 파일명의 HEAD 부분이 대소문자 차이 외에는 같을 경우, NUMBER의 숫자 순으로 정렬한다. 9 < 10 < 0011 < 012 < 13 < 014 순으로 정렬된다. 숫자 앞의 0은 무시되며, 012와 12는 정렬 시에 같은 같은 값으로 처리된다.
-# 두 파일의 HEAD 부분과, NUMBER의 숫자도 같을 경우, 원래 입력에 주어진 순서를 유지한다. MUZI01.zip과 muzi1.png가 입력으로 들어오면, 정렬 후에도 입력 시 주어진 두 파일의 순서가 바뀌어서는 안 된다.
-# 무지를 도와 파일명 정렬 프로그램을 구현하라.
+# 5단계 아이디가 빈 문자열이 아니므로 변화가 없습니다.
+# "bat.y.abcdefghijklm" → "bat.y.abcdefghijklm"
 #
-# 입력 형식
-# 입력으로 배열 files가 주어진다.
+# 6단계 아이디의 길이가 16자 이상이므로, 처음 15자를 제외한 나머지 문자들이 제거되었습니다.
+# "bat.y.abcdefghijklm" → "bat.y.abcdefghi"
 #
-# files는 1000 개 이하의 파일명을 포함하는 문자열 배열이다.
-# 각 파일명은 100 글자 이하 길이로, 영문 대소문자, 숫자, 공백(" "), 마침표("."), 빼기 부호("-")만으로 이루어져 있다. 파일명은 영문자로 시작하며, 숫자를 하나 이상 포함하고 있다.
-# 중복된 파일명은 없으나, 대소문자나 숫자 앞부분의 0 차이가 있는 경우는 함께 주어질 수 있다. (muzi1.txt, MUZI1.txt, muzi001.txt, muzi1.TXT는 함께 입력으로 주어질 수 있다.)
-# 출력 형식
-# 위 기준에 따라 정렬된 배열을 출력한다.
+# 7단계 아이디의 길이가 2자 이하가 아니므로 변화가 없습니다.
+# "bat.y.abcdefghi" → "bat.y.abcdefghi"
 #
-# 입출력 예제
-# 입력: ["img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"]
-# 출력: ["img1.png", "IMG01.GIF", "img02.png", "img2.JPG", "img10.png", "img12.png"]
+# 따라서 신규 유저가 입력한 new_id가 "...!@BaT#*..y.abcdefghijklm"일 때, 네오의 프로그램이 추천하는 새로운 아이디는 "bat.y.abcdefghi" 입니다.
 #
-# 입력: ["F-5 Freedom Fighter", "B-50 Superfortress", "A-10 Thunderbolt II", "F-14 Tomcat"]
-# 출력: ["A-10 Thunderbolt II", "B-50 Superfortress", "F-5 Freedom Fighter", "F-14 Tomcat"]
+# [문제]
+# 신규 유저가 입력한 아이디를 나타내는 new_id가 매개변수로 주어질 때, "네오"가 설계한 7단계의 처리 과정을 거친 후의 추천 아이디를 return 하도록 solution 함수를 완성해 주세요.
 #
-# 해설 보러가기
-
+# [제한사항]
+# new_id는 길이 1 이상 1,000 이하인 문자열입니다.
+# new_id는 알파벳 대문자, 알파벳 소문자, 숫자, 특수문자로 구성되어 있습니다.
+# new_id에 나타날 수 있는 특수문자는 -_.~!@#$%^&*()=+[{]}:?,<>/ 로 한정됩니다.
+#
+# [입출력 예]
+# no	new_id	result
+# 예1	"...!@BaT#*..y.abcdefghijklm"	"bat.y.abcdefghi"
+# 예2	"z-+.^."	"z--"
+# 예3	"=.="	"aaa"
+# 예4	"123_.def"	"123_.def"
+# 예5	"abcdefghijklmn.p"	"abcdefghijklmn"
+# 입출력 예에 대한 설명
+# 입출력 예 #1
+# 문제의 예시와 같습니다.
+#
+# 입출력 예 #2
+# 7단계를 거치는 동안 new_id가 변화하는 과정은 아래와 같습니다.
+#
+# 1단계 변화 없습니다.
+# 2단계 "z-+.^." → "z-.."
+# 3단계 "z-.." → "z-."
+# 4단계 "z-." → "z-"
+# 5단계 변화 없습니다.
+# 6단계 변화 없습니다.
+# 7단계 "z-" → "z--"
+#
+# 입출력 예 #3
+# 7단계를 거치는 동안 new_id가 변화하는 과정은 아래와 같습니다.
+#
+# 1단계 변화 없습니다.
+# 2단계 "=.=" → "."
+# 3단계 변화 없습니다.
+# 4단계 "." → "" (new_id가 빈 문자열이 되었습니다.)
+# 5단계 "" → "a"
+# 6단계 변화 없습니다.
+# 7단계 "a" → "aaa"
+#
+# 입출력 예 #4
+# 1단계에서 7단계까지 거치는 동안 new_id("123_.def")는 변하지 않습니다. 즉, new_id가 처음부터 카카오의 아이디 규칙에 맞습니다.
+#
+# 입출력 예 #5
+# 1단계 변화 없습니다.
+# 2단계 변화 없습니다.
+# 3단계 변화 없습니다.
+# 4단계 변화 없습니다.
+# 5단계 변화 없습니다.
+# 6단계 "abcdefghijklmn.p" → "abcdefghijklmn." → "abcdefghijklmn"
+# 7단계 변화 없습니다.
 import re
+def solution(new_id):
+    answer = ''
+    content = new_id
+    content = list(content.lower())
+    content1 = []
+    content2 = []
+    index = []
+    for i in range(len(content)):
+        if not (content[i] == "-" or content[i] == "_" or content[i] == "." or (content[i] >= 'a' and content[i] <='z') or(content[i] >= '0' and content[i] <= '9')):
+            index.append(i)
 
+    for i in range(len(content)):
+        if i not in index:
+            content1.append(content[i])
+    index = []
 
-def solution(files):
-    # 1
-    temp = [re.split(r"([0-9]+)", s) for s in files]
+    for i in range(len(content1)):
+        if i < len(content1)-1:
+            if content1[i] == '.' and content1[i+1] == '.':
+                index.append(i)
 
-    # 2
-    sort = sorted(temp, key=lambda x: (x[0].lower(), int(x[1])))
+    for i in range(len(content1)):
+        if i not in index:
+            content2.append(content1[i])
+    print(content2)
+    if len(content2)!=0:
+        if content2[0] == ".":
+            content2.pop(0)
+    if len(content2)!=0:
+        if content2[len(content2)-1] == '.':
+            content2.pop(len(content2)-1)
 
-    # 3
-    return ["".join(s) for s in sort]
+    if len(content2)==0:
+        content2.append("a")
+    if len(content2) >= 16:
+        content2 = content2[0:15]
+    if len(content2) != 0:
+        if content2[len(content2) - 1] == '.':
+            content2.pop(len(content2) - 1)
+    if len(content2)<=2:
+        chr = content2[len(content2)-1]
+        while(len(content2)!=3):
+            content2.append(chr)
 
-solution(["img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"])
+    return "".join(content2)
+
+print(solution("abcdefghijklmn.p"))

@@ -1,144 +1,132 @@
-# 카카오에 입사한 신입 개발자 네오는 "카카오계정개발팀"에 배치되어, 카카오 서비스에 가입하는 유저들의 아이디를 생성하는 업무를 담당하게 되었습니다.
-# "네오"에게 주어진 첫 업무는 새로 가입하는 유저들이 카카오 아이디 규칙에 맞지 않는 아이디를 입력했을 때,
-# 입력된 아이디와 유사하면서 규칙에 맞는 아이디를 추천해주는 프로그램을 개발하는 것입니다.
-# 다음은 카카오 아이디의 규칙입니다.
+# [본 문제는 정확성과 효율성 테스트 각각 점수가 있는 문제입니다.]
 #
-# 아이디의 길이는 3자 이상 15자 이하여야 합니다.
-# 아이디는 알파벳 소문자, 숫자, 빼기(-), 밑줄(_), 마침표(.) 문자만 사용할 수 있습니다.
-# 단, 마침표(.)는 처음과 끝에 사용할 수 없으며 또한 연속으로 사용할 수 없습니다.
-# "네오"는 다음과 같이 7단계의 순차적인 처리 과정을 통해 신규 유저가 입력한 아이디가 카카오 아이디 규칙에 맞는 지 검사하고 규칙에 맞지 않은 경우 규칙에 맞는 새로운 아이디를 추천해 주려고 합니다.
-# 신규 유저가 입력한 아이디가 new_id 라고 한다면,
+# 카카오는 하반기 경력 개발자 공개채용을 진행 중에 있으며 현재 지원서 접수와 코딩테스트가 종료되었습니다. 이번 채용에서 지원자는 지원서 작성 시 아래와 같이 4가지 항목을 반드시 선택하도록 하였습니다.
 #
-# 1단계 new_id의 모든 대문자를 대응되는 소문자로 치환합니다.
-# 2단계 new_id에서 알파벳 소문자, 숫자, 빼기(-), 밑줄(_), 마침표(.)를 제외한 모든 문자를 제거합니다.
-# 3단계 new_id에서 마침표(.)가 2번 이상 연속된 부분을 하나의 마침표(.)로 치환합니다.
-# 4단계 new_id에서 마침표(.)가 처음이나 끝에 위치한다면 제거합니다.
-# 5단계 new_id가 빈 문자열이라면, new_id에 "a"를 대입합니다.
-# 6단계 new_id의 길이가 16자 이상이면, new_id의 첫 15개의 문자를 제외한 나머지 문자들을 모두 제거합니다.
-#      만약 제거 후 마침표(.)가 new_id의 끝에 위치한다면 끝에 위치한 마침표(.) 문자를 제거합니다.
-# 7단계 new_id의 길이가 2자 이하라면, new_id의 마지막 문자를 new_id의 길이가 3이 될 때까지 반복해서 끝에 붙입니다.
-# 예를 들어, new_id 값이 "...!@BaT#*..y.abcdefghijklm" 라면, 위 7단계를 거치고 나면 new_id는 아래와 같이 변경됩니다.
+# 코딩테스트 참여 개발언어 항목에 cpp, java, python 중 하나를 선택해야 합니다.
+# 지원 직군 항목에 backend와 frontend 중 하나를 선택해야 합니다.
+# 지원 경력구분 항목에 junior와 senior 중 하나를 선택해야 합니다.
+# 선호하는 소울푸드로 chicken과 pizza 중 하나를 선택해야 합니다.
+# 인재영입팀에 근무하고 있는 니니즈는 코딩테스트 결과를 분석하여 채용에 참여한 개발팀들에 제공하기 위해 지원자들의 지원 조건을 선택하면 해당 조건에 맞는 지원자가 몇 명인 지 쉽게 알 수 있는 도구를 만들고 있습니다.
+# 예를 들어, 개발팀에서 궁금해하는 문의사항은 다음과 같은 형태가 될 수 있습니다.
+# 코딩테스트에 java로 참여했으며, backend 직군을 선택했고, junior 경력이면서, 소울푸드로 pizza를 선택한 사람 중 코딩테스트 점수를 50점 이상 받은 지원자는 몇 명인가?
 #
-# 1단계 대문자 'B'와 'T'가 소문자 'b'와 't'로 바뀌었습니다.
-# "...!@BaT#*..y.abcdefghijklm" → "...!@bat#*..y.abcdefghijklm"
+# 물론 이 외에도 각 개발팀의 상황에 따라 아래와 같이 다양한 형태의 문의가 있을 수 있습니다.
 #
-# 2단계 '!', '@', '#', '*' 문자가 제거되었습니다.
-# "...!@bat#*..y.abcdefghijklm" → "...bat..y.abcdefghijklm"
+# 코딩테스트에 python으로 참여했으며, frontend 직군을 선택했고, senior 경력이면서, 소울푸드로 chicken을 선택한 사람 중 코딩테스트 점수를 100점 이상 받은 사람은 모두 몇 명인가?
+# 코딩테스트에 cpp로 참여했으며, senior 경력이면서, 소울푸드로 pizza를 선택한 사람 중 코딩테스트 점수를 100점 이상 받은 사람은 모두 몇 명인가?
+# backend 직군을 선택했고, senior 경력이면서 코딩테스트 점수를 200점 이상 받은 사람은 모두 몇 명인가?
+# 소울푸드로 chicken을 선택한 사람 중 코딩테스트 점수를 250점 이상 받은 사람은 모두 몇 명인가?
+# 코딩테스트 점수를 150점 이상 받은 사람은 모두 몇 명인가?
+# 즉, 개발팀에서 궁금해하는 내용은 다음과 같은 형태를 갖습니다.
 #
-# 3단계 '...'와 '..' 가 '.'로 바뀌었습니다.
-# "...bat..y.abcdefghijklm" → ".bat.y.abcdefghijklm"
-#
-# 4단계 아이디의 처음에 위치한 '.'가 제거되었습니다.
-# ".bat.y.abcdefghijklm" → "bat.y.abcdefghijklm"
-#
-# 5단계 아이디가 빈 문자열이 아니므로 변화가 없습니다.
-# "bat.y.abcdefghijklm" → "bat.y.abcdefghijklm"
-#
-# 6단계 아이디의 길이가 16자 이상이므로, 처음 15자를 제외한 나머지 문자들이 제거되었습니다.
-# "bat.y.abcdefghijklm" → "bat.y.abcdefghi"
-#
-# 7단계 아이디의 길이가 2자 이하가 아니므로 변화가 없습니다.
-# "bat.y.abcdefghi" → "bat.y.abcdefghi"
-#
-# 따라서 신규 유저가 입력한 new_id가 "...!@BaT#*..y.abcdefghijklm"일 때, 네오의 프로그램이 추천하는 새로운 아이디는 "bat.y.abcdefghi" 입니다.
-#
+# * [조건]을 만족하는 사람 중 코딩테스트 점수를 X점 이상 받은 사람은 모두 몇 명인가?
 # [문제]
-# 신규 유저가 입력한 아이디를 나타내는 new_id가 매개변수로 주어질 때, "네오"가 설계한 7단계의 처리 과정을 거친 후의 추천 아이디를 return 하도록 solution 함수를 완성해 주세요.
+# 지원자가 지원서에 입력한 4가지의 정보와 획득한 코딩테스트 점수를 하나의 문자열로 구성한 값의 배열 info, 개발팀이 궁금해하는 문의조건이 문자열 형태로 담긴 배열 query가 매개변수로 주어질 때,
+# 각 문의조건에 해당하는 사람들의 숫자를 순서대로 배열에 담아 return 하도록 solution 함수를 완성해 주세요.
 #
 # [제한사항]
-# new_id는 길이 1 이상 1,000 이하인 문자열입니다.
-# new_id는 알파벳 대문자, 알파벳 소문자, 숫자, 특수문자로 구성되어 있습니다.
-# new_id에 나타날 수 있는 특수문자는 -_.~!@#$%^&*()=+[{]}:?,<>/ 로 한정됩니다.
-#
+# info 배열의 크기는 1 이상 50,000 이하입니다.
+# info 배열 각 원소의 값은 지원자가 지원서에 입력한 4가지 값과 코딩테스트 점수를 합친 "개발언어 직군 경력 소울푸드 점수" 형식입니다.
+# 개발언어는 cpp, java, python 중 하나입니다.
+# 직군은 backend, frontend 중 하나입니다.
+# 경력은 junior, senior 중 하나입니다.
+# 소울푸드는 chicken, pizza 중 하나입니다.
+# 점수는 코딩테스트 점수를 의미하며, 1 이상 100,000 이하인 자연수입니다.
+# 각 단어는 공백문자(스페이스 바) 하나로 구분되어 있습니다.
+# query 배열의 크기는 1 이상 100,000 이하입니다.
+# query의 각 문자열은 "[조건] X" 형식입니다.
+# [조건]은 "개발언어 and 직군 and 경력 and 소울푸드" 형식의 문자열입니다.
+# 언어는 cpp, java, python, - 중 하나입니다.
+# 직군은 backend, frontend, - 중 하나입니다.
+# 경력은 junior, senior, - 중 하나입니다.
+# 소울푸드는 chicken, pizza, - 중 하나입니다.
+# '-' 표시는 해당 조건을 고려하지 않겠다는 의미입니다.
+# X는 코딩테스트 점수를 의미하며 조건을 만족하는 사람 중 X점 이상 받은 사람은 모두 몇 명인 지를 의미합니다.
+# 각 단어는 공백문자(스페이스 바) 하나로 구분되어 있습니다.
+# 예를 들면, "cpp and - and senior and pizza 500"은 "cpp로 코딩테스트를 봤으며, 경력은 senior 이면서 소울푸드로 pizza를 선택한 지원자 중 코딩테스트 점수를 500점 이상 받은 사람은 모두 몇 명인가?"를 의미합니다.
 # [입출력 예]
-# no	new_id	result
-# 예1	"...!@BaT#*..y.abcdefghijklm"	"bat.y.abcdefghi"
-# 예2	"z-+.^."	"z--"
-# 예3	"=.="	"aaa"
-# 예4	"123_.def"	"123_.def"
-# 예5	"abcdefghijklmn.p"	"abcdefghijklmn"
+# info	query	result
+# ["java backend junior pizza 150","python frontend senior chicken 210","python frontend senior chicken 150","cpp backend senior pizza 260","java backend junior chicken 80","python backend senior chicken 50"]	["java and backend and junior and pizza 100","python and frontend and senior and chicken 200","cpp and - and senior and pizza 250","- and backend and senior and - 150","- and - and - and chicken 100","- and - and - and - 150"]	[1,1,1,1,2,4]
 # 입출력 예에 대한 설명
-# 입출력 예 #1
-# 문제의 예시와 같습니다.
+# 지원자 정보를 표로 나타내면 다음과 같습니다.
 #
-# 입출력 예 #2
-# 7단계를 거치는 동안 new_id가 변화하는 과정은 아래와 같습니다.
-#
-# 1단계 변화 없습니다.
-# 2단계 "z-+.^." → "z-.."
-# 3단계 "z-.." → "z-."
-# 4단계 "z-." → "z-"
-# 5단계 변화 없습니다.
-# 6단계 변화 없습니다.
-# 7단계 "z-" → "z--"
-#
-# 입출력 예 #3
-# 7단계를 거치는 동안 new_id가 변화하는 과정은 아래와 같습니다.
-#
-# 1단계 변화 없습니다.
-# 2단계 "=.=" → "."
-# 3단계 변화 없습니다.
-# 4단계 "." → "" (new_id가 빈 문자열이 되었습니다.)
-# 5단계 "" → "a"
-# 6단계 변화 없습니다.
-# 7단계 "a" → "aaa"
-#
-# 입출력 예 #4
-# 1단계에서 7단계까지 거치는 동안 new_id("123_.def")는 변하지 않습니다. 즉, new_id가 처음부터 카카오의 아이디 규칙에 맞습니다.
-#
-# 입출력 예 #5
-# 1단계 변화 없습니다.
-# 2단계 변화 없습니다.
-# 3단계 변화 없습니다.
-# 4단계 변화 없습니다.
-# 5단계 변화 없습니다.
-# 6단계 "abcdefghijklmn.p" → "abcdefghijklmn." → "abcdefghijklmn"
-# 7단계 변화 없습니다.
-import re
-def solution(new_id):
-    answer = ''
-    content = new_id
-    content = list(content.lower())
-    content1 = []
-    content2 = []
-    index = []
-    for i in range(len(content)):
-        if not (content[i] == "-" or content[i] == "_" or content[i] == "." or (content[i] >= 'a' and content[i] <='z') or(content[i] >= '0' and content[i] <= '9')):
-            index.append(i)
+# 언어	직군	경력	소울 푸드	점수
+# java	backend	junior	pizza	150
+# python	frontend	senior	chicken	210
+# python	frontend	senior	chicken	150
+# cpp	backend	senior	pizza	260
+# java	backend	junior	chicken	80
+# python	backend	senior	chicken	50
+# "java and backend and junior and pizza 100" : java로 코딩테스트를 봤으며, backend 직군을 선택했고 junior 경력이면서 소울푸드로 pizza를 선택한 지원자 중 코딩테스트 점수를 100점 이상 받은 지원자는 1명 입니다.
+# "python and frontend and senior and chicken 200" : python으로 코딩테스트를 봤으며, frontend 직군을 선택했고, senior 경력이면서 소울 푸드로 chicken을 선택한 지원자 중 코딩테스트 점수를 200점 이상 받은 지원자는 1명 입니다.
+# "cpp and - and senior and pizza 250" : cpp로 코딩테스트를 봤으며, senior 경력이면서 소울푸드로 pizza를 선택한 지원자 중 코딩테스트 점수를 250점 이상 받은 지원자는 1명 입니다.
+# "- and backend and senior and - 150" : backend 직군을 선택했고, senior 경력인 지원자 중 코딩테스트 점수를 150점 이상 받은 지원자는 1명 입니다.
+# "- and - and - and chicken 100" : 소울푸드로 chicken을 선택한 지원자 중 코딩테스트 점수를 100점 이상을 받은 지원자는 2명 입니다.
+# "- and - and - and - 150" : 코딩테스트 점수를 150점 이상 받은 지원자는 4명 입니다.
+# 정확성만 통과
+def solution(info, query):
+    answer = []
 
-    for i in range(len(content)):
-        if i not in index:
-            content1.append(content[i])
-    index = []
+    for q in query:
+        line1 = q.split(" ")
+        line1 = list(filter(lambda x: x != 'and', line1))
+        cnt = 0
+        for s in info:
+            line = s.split(" ")
+            if int(line[4]) >= int(line1[4]):
+                if (line[0] == line1[0] or line1[0] == '-') and (line[1] == line1[1] or line1[1] == '-') and (line[2] == line1[2] or line1[2] == '-') and (line[3] == line1[3] or line1[3] == '-'):
+                        cnt+=1
+        answer.append(cnt)
+    return answer
+from itertools import combinations
 
-    for i in range(len(content1)):
-        if i < len(content1)-1:
-            if content1[i] == '.' and content1[i+1] == '.':
-                index.append(i)
 
-    for i in range(len(content1)):
-        if i not in index:
-            content2.append(content1[i])
-    print(content2)
-    if len(content2)!=0:
-        if content2[0] == ".":
-            content2.pop(0)
-    if len(content2)!=0:
-        if content2[len(content2)-1] == '.':
-            content2.pop(len(content2)-1)
+def solution(info, query):
+    answer = []
+    # 0:개발언어, 1:직군, 2:경력, 3:소울푸드, 4:점수
+    combi_dict = dict()
 
-    if len(content2)==0:
-        content2.append("a")
-    if len(content2) >= 16:
-        content2 = content2[0:15]
-    if len(content2) != 0:
-        if content2[len(content2) - 1] == '.':
-            content2.pop(len(content2) - 1)
-    if len(content2)<=2:
-        chr = content2[len(content2)-1]
-        while(len(content2)!=3):
-            content2.append(chr)
+    for information in info:
+        temp = information.split(' ')
+        for i in range(5):
+            for combi_info in combinations(temp[:4], i):
+                sum_info = ''.join(combi_info)
+                if sum_info in combi_dict:
+                    combi_dict[sum_info].append(int(temp[-1]))
+                else:
+                    combi_dict[sum_info] = [int(temp[-1])]
 
-    return "".join(content2)
+    for key in combi_dict.keys():
+        combi_dict[key].sort()
 
-print(solution("abcdefghijklmn.p"))
+    for commands in query:
+        combi_command = commands.split(' ')
+        target = int(combi_command[-1])
+        combi_command = combi_command[:-1]
+
+        for _ in range(3):
+            combi_command.remove('and')
+        while '-' in combi_command:
+            combi_command.remove('-')
+        combi_command = ''.join(combi_command)
+
+        if combi_command in combi_dict:
+            scores = combi_dict[combi_command]
+
+            left = 0
+            right = len(scores) - 1
+
+            while left <= right:
+                mid = (left + right) // 2
+
+                if target > scores[mid]:
+                    left = mid + 1
+                elif target <= scores[mid]:
+                    right = mid - 1
+
+            answer.append(len(scores) - left)
+        else:
+            answer.append(0)
+
+    return answer
+print(solution(["java backend junior pizza 150","python frontend senior chicken 210","python frontend senior chicken 150","cpp backend senior pizza 260","java backend junior chicken 80","python backend senior chicken 50"],["java and backend and junior and pizza 100","python and frontend and senior and chicken 200","cpp and - and senior and pizza 250","- and backend and senior and - 150","- and - and - and chicken 100","- and - and - and - 150"]))
