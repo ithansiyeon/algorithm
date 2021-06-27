@@ -9,4 +9,3 @@ for i in nums:
     if i < b:
         nums1.append(str(i))
 print(" ".join(nums1))
-
