@@ -38,10 +38,10 @@ def solution():
     M, N = map(int, sys.stdin.readline().split())
     for idx in range(M):
         input_list.append([i for i in sys.stdin.readline()][:-1])
-
     min_revise_cnt = 123041234723842
     for row in range(M - 7):
         for col in range(N - 7):
+            print(row,col)
             # 8*8 매트릭스로 자르기
             slice_mat = [one_row[col:col + 8] for one_row in input_list[row:row + 8]]
             revise_cnt = check_BW(slice_mat)
