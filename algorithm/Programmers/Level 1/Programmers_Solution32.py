@@ -6,7 +6,6 @@
 # 입출력 예
 # num	return
 # 3	Odd
-# 4	Even
 def solution(num):
     answer = ''
     if num % 2 == 0:
