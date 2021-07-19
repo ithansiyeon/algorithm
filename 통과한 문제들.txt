@@ -67,6 +67,9 @@
 8. 큰 수 A+B 
 9. Fly me to the Alpha Centauri
 
+<기본 수학2>
+1. 소수 
+
 <브루트 포스>
 1. 블랙잭
 2. 분해합
