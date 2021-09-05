@@ -1,104 +1,94 @@
-# 스마트폰 전화 키패드의 각 칸에 다음과 같이 숫자들이 적혀 있습니다.
+# 문제 설명
+# 실패율
+# failture_rate1.png
 #
-# kakao_phone1.png
+# 슈퍼 게임 개발자 오렐리는 큰 고민에 빠졌다.
+# 그녀가 만든 프랜즈 오천성이 대성공을 거뒀지만, 요즘 신규 사용자의 수가 급감한 것이다.
+# 원인은 신규 사용자와 기존 사용자 사이에 스테이지 차이가 너무 큰 것이 문제였다.
 #
-# 이 전화 키패드에서 왼손과 오른손의 엄지손가락만을 이용해서 숫자만을 입력하려고 합니다.
-# 맨 처음 왼손 엄지손가락은 * 키패드에 오른손 엄지손가락은 # 키패드 위치에서 시작하며, 엄지손가락을 사용하는 규칙은 다음과 같습니다.
+# 이 문제를 어떻게 할까 고민 한 그녀는 동적으로 게임 시간을 늘려서 난이도를 조절하기로 했다.
+# 역시 슈퍼 개발자라 대부분의 로직은 쉽게 구현했지만, 실패율을 구하는 부분에서 위기에 빠지고 말았다.
+# 오렐리를 위해 실패율을 구하는 코드를 완성하라.
 #
-# 엄지손가락은 상하좌우 4가지 방향으로만 이동할 수 있으며 키패드 이동 한 칸은 거리로 1에 해당합니다.
-# 왼쪽 열의 3개의 숫자 1, 4, 7을 입력할 때는 왼손 엄지손가락을 사용합니다.
-# 오른쪽 열의 3개의 숫자 3, 6, 9를 입력할 때는 오른손 엄지손가락을 사용합니다.
-# 가운데 열의 4개의 숫자 2, 5, 8, 0을 입력할 때는 두 엄지손가락의 현재 키패드의 위치에서 더 가까운 엄지손가락을 사용합니다.
-# 4-1. 만약 두 엄지손가락의 거리가 같다면, 오른손잡이는 오른손 엄지손가락, 왼손잡이는 왼손 엄지손가락을 사용합니다.
-# 순서대로 누를 번호가 담긴 배열 numbers, 왼손잡이인지 오른손잡이인 지를 나타내는 문자열 hand가 매개변수로 주어질 때, 각 번호를 누른 엄지손가락이 왼손인 지 오른손인 지를 나타내는 연속된 문자열 형태로 return 하도록 solution 함수를 완성해주세요.
+# 실패율은 다음과 같이 정의한다.
+# 스테이지에 도달했으나 아직 클리어하지 못한 플레이어의 수 / 스테이지에 도달한 플레이어 수
+# 전체 스테이지의 개수 N, 게임을 이용하는 사용자가 현재 멈춰있는 스테이지의 번호가 담긴 배열 stages가 매개변수로 주어질 때,
+# 실패율이 높은 스테이지부터 내림차순으로 스테이지의 번호가 담겨있는 배열을 return 하도록 solution 함수를 완성하라.
 #
-# [제한사항]
-# numbers 배열의 크기는 1 이상 1,000 이하입니다.
-# numbers 배열 원소의 값은 0 이상 9 이하인 정수입니다.
-# hand는 "left" 또는 "right" 입니다.
-# "left"는 왼손잡이, "right"는 오른손잡이를 의미합니다.
-# 왼손 엄지손가락을 사용한 경우는 L, 오른손 엄지손가락을 사용한 경우는 R을 순서대로 이어붙여 문자열 형태로 return 해주세요.
+# 제한사항
+# 스테이지의 개수 N은 1 이상 500 이하의 자연수이다.
+# stages의 길이는 1 이상 200,000 이하이다.
+# stages에는 1 이상 N + 1 이하의 자연수가 담겨있다.
+# 각 자연수는 사용자가 현재 도전 중인 스테이지의 번호를 나타낸다.
+# 단, N + 1 은 마지막 스테이지(N 번째 스테이지) 까지 클리어 한 사용자를 나타낸다.
+# 만약 실패율이 같은 스테이지가 있다면 작은 번호의 스테이지가 먼저 오도록 하면 된다.
+# 스테이지에 도달한 유저가 없는 경우 해당 스테이지의 실패율은 0 으로 정의한다.
 # 입출력 예
-# numbers	hand	result
-# [1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5]	"right"	"LRLLLRLLRRL"
-# [7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2]	"left"	"LRLLRRLLLRR"
-# [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]	"right"	"LLRLLRLLRL"
-# 입출력 예에 대한 설명
+# N	stages	result
+# 5	[2, 1, 2, 6, 2, 4, 3, 3]	[3,4,2,1,5]
+# 4	[4,4,4,4,4]	[4,1,2,3]
+# 입출력 예 설명
 # 입출력 예 #1
+# 1번 스테이지에는 총 8명의 사용자가 도전했으며, 이 중 1명의 사용자가 아직 클리어하지 못했다. 따라서 1번 스테이지의 실패율은 다음과 같다.
 #
-# 순서대로 눌러야 할 번호가 [1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5]이고, 오른손잡이입니다.
+# 1 번 스테이지 실패율 : 1/8
+# 2번 스테이지에는 총 7명의 사용자가 도전했으며, 이 중 3명의 사용자가 아직 클리어하지 못했다. 따라서 2번 스테이지의 실패율은 다음과 같다.
 #
-# 왼손 위치	오른손 위치	눌러야 할 숫자	사용한 손	설명
-# *	#	1	L	1은 왼손으로 누릅니다.
-# 1	#	3	R	3은 오른손으로 누릅니다.
-# 1	3	4	L	4는 왼손으로 누릅니다.
-# 4	3	5	L	왼손 거리는 1, 오른손 거리는 2이므로 왼손으로 5를 누릅니다.
-# 5	3	8	L	왼손 거리는 1, 오른손 거리는 3이므로 왼손으로 8을 누릅니다.
-# 8	3	2	R	왼손 거리는 2, 오른손 거리는 1이므로 오른손으로 2를 누릅니다.
-# 8	2	1	L	1은 왼손으로 누릅니다.
-# 1	2	4	L	4는 왼손으로 누릅니다.
-# 4	2	5	R	왼손 거리와 오른손 거리가 1로 같으므로, 오른손으로 5를 누릅니다.
-# 4	5	9	R	9는 오른손으로 누릅니다.
-# 4	9	5	L	왼손 거리는 1, 오른손 거리는 2이므로 왼손으로 5를 누릅니다.
-# 5	9	-	-
-# 따라서 "LRLLLRLLRRL"를 return 합니다.
+# 2 번 스테이지 실패율 : 3/7
+# 마찬가지로 나머지 스테이지의 실패율은 다음과 같다.
 #
+# 3 번 스테이지 실패율 : 2/4
+# 4번 스테이지 실패율 : 1/2
+# 5번 스테이지 실패율 : 0/1
+# 각 스테이지의 번호를 실패율의 내림차순으로 정렬하면 다음과 같다.
+#
+# [3,4,2,1,5]
 # 입출력 예 #2
 #
-# 왼손잡이가 [7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2]를 순서대로 누르면 사용한 손은 "LRLLRRLLLRR"이 됩니다.
+# 모든 사용자가 마지막 스테이지에 있으므로 4번 스테이지의 실패율은 1이며 나머지 스테이지의 실패율은 0이다.
 #
-# 입출력 예 #3
-#
-# 오른손잡이가 [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]를 순서대로 누르면 사용한 손은 "LLRLLRLLRL"이 됩니다.
-import switch as switch
+# [4,1,2,3]
 
+def solution(N, stages):
+    answer = []
+    cnt = 0
+    cnt1 = 0
+    dic = {}
+    for i in range(N):
+        for item in stages:
+            if item == (i+1):
+                cnt+=1
+            if item>=(i+1): cnt1+=1
+        if cnt1 == 0:
+            dic[i+1]=0
+        else:dic[i+1]=cnt/cnt1
+            # list = sorted(dic.items(), key=lambda x: x[1], reverse=True)
+        # print(cnt1)
+        # print(dic[i+1])
+        cnt = 0
+        cnt1 = 0
 
-def solution(numbers, hand):
-    answer = ''
-    # 각 버튼별 위치
-    button_position = [[3, 1], [0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]]
-    # 왼손 초기 위치
-    left = [3, 0]
-    # 오른손 초기 위치
-    right = [3, 2]
-
-    def set_left(number):
-        nonlocal answer, left
-        left = button_position[number]
-        answer = answer + 'L'
-
-    def set_right(number):
-        nonlocal answer, right
-        right = button_position[number]
-        answer = answer + 'R'
-
-    for number in numbers:
-        # 왼쪽버튼 처리
-        if number in [1, 4, 7]:
-            set_left(number)
-        # 오른쪽 버튼 처리
-        elif number in [3, 6, 9]:
-            set_right(number)
-        # 가운데 버튼이라면
-        else:
-            # 왼손과 오른손의 거리 계산하기
-            left_distance = abs(left[0] - button_position[number][0]) + abs(left[1] - button_position[number][1])
-            right_distance = abs(right[0] - button_position[number][0]) + abs(right[1] - button_position[number][1])
-            # 거리가 같다면
-            if left_distance == right_distance:
-                # 오른손잡이 일때
-                if hand == 'right':
-                    set_right(number)
-                # 왼손잡이 일때
-                else:
-                    set_left(number)
-            # 왼쪽이 거리가 짧다면
-            elif left_distance < right_distance:
-                set_left(number)
-            # 오른쪽 거리가 짧다면
-            else:
-                set_right(number)
-    # 결과 반환
+    # print(sorted(dic.values(), reverse=True))
+    # list = sorted(dic.values(), reverse=True)
+    list=sorted(dic.items(),key=lambda x:x[1],reverse=True)
+    # loop = True
+    # print(sorted(dic.items(),key=lambda x:x[1],reverse=True))
+    for item in list:
+        answer.append(item[0])
+    # for item in list:
+    #     for key in dic.keys():
+    #          if dic[key]==item:
+    #              if len(answer)!=0:
+    #                  for item1 in answer:
+    #                      if item1==key:
+    #                          loop = False
+    #                          break
+    #              if loop:
+    #                 answer.append(key)
+    #              elif len(answer)==0:
+    #                    answer.append(key)
+    #     loop = True
     return answer
 
-print(solution([1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5],"right"))
+print(solution( 4,[4,4,4,4,4]))
+print(solution( 5,[2, 1, 2, 6, 2, 4, 3, 3]))

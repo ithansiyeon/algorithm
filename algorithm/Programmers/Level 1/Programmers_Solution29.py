@@ -1,22 +1,19 @@
-# 함수 solution은 정수 n을 매개변수로 입력받습니다.
-# n의 각 자릿수를 큰것부터 작은 순으로 정렬한 새로운 정수를 리턴해주세요. 예를들어 n이 118372면 873211을 리턴하면 됩니다.
+# 함수 solution은 정수 x와 자연수 n을 입력 받아, x부터 시작해 x씩 증가하는 숫자를 n개 지니는 리스트를 리턴해야 합니다. 다음 제한 조건을 보고, 조건을 만족하는 함수, solution을 완성해주세요.
+#
 # 제한 조건
-# n은 1이상 8000000000 이하인 자연수입니다.
+# x는 -10000000 이상, 10000000 이하인 정수입니다.
+# n은 1000 이하인 자연수입니다.
 # 입출력 예
-# n	return
-# 118372	873211
-def solution(n):
-    answer = 0
-    n = str(n)
-    list = []
+# x	n	answer
+# 2	5	[2,4,6,8,10]
+# 4	3	[4,8,12]
+# -4	2	[-4, -8]
 
-    for i in range(len(n)):
-        list.append(n[i])
+def solution(x, n):
+    answer = []
+    num = x
+    while len(answer)!=n:
+        answer.append(x)
+        num+=x
 
-    list.sort()
-    list.reverse()
-    print(list)
-    answer = "".join(list)
     return answer
-
-print(solution(118372))

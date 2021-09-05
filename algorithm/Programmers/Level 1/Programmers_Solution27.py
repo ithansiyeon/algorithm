@@ -1,27 +1,14 @@
-# 자연수 N이 주어지면, N의 각 자릿수의 합을 구해서 return 하는 solution 함수를 만들어 주세요.
-# 예를들어 N = 123이면 1 + 2 + 3 = 6을 return 하면 됩니다.
+# 프로그래머스 모바일은 개인정보 보호를 위해 고지서를 보낼 때 고객들의 전화번호의 일부를 가립니다.
+# 전화번호가 문자열 phone_number로 주어졌을 때, 전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 *으로 가린 문자열을 리턴하는 함수, solution을 완성해주세요.
 #
-# 제한사항
-# N의 범위 : 100,000,000 이하의 자연수
+# 제한 조건
+# s는 길이 4 이상, 20이하인 문자열입니다.
 # 입출력 예
-# N	answer
-# 123	6
-# 987	24
-# 입출력 예 설명
-# 입출력 예 #1
-# 문제의 예시와 같습니다.
-#
-# 입출력 예 #2
-# 9 + 8 + 7 = 24이므로 24를 return 하면 됩니다.
-
-
-
-def solution(n):
-    answer = 0
-    num = str(n)
-    for i in range(-1,-len(str(n))-1,-1):
-       answer+=ord(num[i])-48
-       # print(answer)
+# phone_number	return
+# 01033334444	*******4444
+# 027778888	*****8888
+def solution(phone_number):
+    answer = ''
+    back = phone_number[-4:]
+    return "*"*(len(phone_number)-4)+back
     return answer
-
-solution(123)

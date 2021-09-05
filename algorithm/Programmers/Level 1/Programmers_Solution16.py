@@ -1,33 +1,27 @@
-# 배열 array의 i번째 숫자부터 j번째 숫자까지 자르고 정렬했을 때, k번째에 있는 수를 구하려 합니다.
+# 자연수 N이 주어지면, N의 각 자릿수의 합을 구해서 return 하는 solution 함수를 만들어 주세요.
+# 예를들어 N = 123이면 1 + 2 + 3 = 6을 return 하면 됩니다.
 #
-# 예를 들어 array가 [1, 5, 2, 6, 3, 7, 4], i = 2, j = 5, k = 3이라면
-#
-# array의 2번째부터 5번째까지 자르면 [5, 2, 6, 3]입니다.
-# 1에서 나온 배열을 정렬하면 [2, 3, 5, 6]입니다.
-# 2에서 나온 배열의 3번째 숫자는 5입니다.
-# 배열 array, [i, j, k]를 원소로 가진 2차원 배열 commands가 매개변수로 주어질 때,
-# commands의 모든 원소에 대해 앞서 설명한 연산을 적용했을 때 나온 결과를 배열에 담아 return 하도록 solution 함수를 작성해주세요.
 # 제한사항
-# array의 길이는 1 이상 100 이하입니다.
-# array의 각 원소는 1 이상 100 이하입니다.
-# commands의 길이는 1 이상 50 이하입니다.
-# commands의 각 원소는 길이가 3입니다.
+# N의 범위 : 100,000,000 이하의 자연수
 # 입출력 예
-# array	commands	return
-# [1, 5, 2, 6, 3, 7, 4]	[[2, 5, 3], [4, 4, 1], [1, 7, 3]]	[5, 6, 3]
+# N	answer
+# 123	6
+# 987	24
 # 입출력 예 설명
-# [1, 5, 2, 6, 3, 7, 4]를 2번째부터 5번째까지 자른 후 정렬합니다. [2, 3, 5, 6]의 세 번째 숫자는 5입니다.
-# [1, 5, 2, 6, 3, 7, 4]를 4번째부터 4번째까지 자른 후 정렬합니다. [6]의 첫 번째 숫자는 6입니다.
-# [1, 5, 2, 6, 3, 7, 4]를 1번째부터 7번째까지 자릅니다. [1, 2, 3, 4, 5, 6, 7]의 세 번째 숫자는 3입니다.
+# 입출력 예 #1
+# 문제의 예시와 같습니다.
+#
+# 입출력 예 #2
+# 9 + 8 + 7 = 24이므로 24를 return 하면 됩니다.
 
-def solution(array, commands):
-    answer = []
-    for i in range(len(commands)):
-        list = array[commands[i][0]-1:commands[i][1]]
-        # print(array[commands[i][0]-1:commands[i][1]])
-        list=sorted(list)
-        answer.append(list[commands[i][2]-1])
-        # print(answer)
+
+
+def solution(n):
+    answer = 0
+    num = str(n)
+    for i in range(-1,-len(str(n))-1,-1):
+       answer+=ord(num[i])-48
+       # print(answer)
     return answer
 
-solution([1, 5, 2, 6, 3, 7, 4],[[2, 5, 3], [4, 4, 1], [1, 7, 3]])
+solution(123)

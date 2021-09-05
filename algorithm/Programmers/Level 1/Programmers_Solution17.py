@@ -1,14 +1,21 @@
-# 단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다.
+# 문제 설명
+# 자연수 n을 뒤집어 각 자리 숫자를 원소로 가지는 배열 형태로 리턴해주세요.
+# 예를들어 n이 12345이면 [5,4,3,2,1]을 리턴합니다.
 #
-# 재한사항
-# s는 길이가 1 이상, 100이하인 스트링입니다.
+# 제한 조건
+# n은 10,000,000,000이하인 자연수입니다.
 # 입출력 예
-# s	return
-# abcde	c
+# n	return
+# 12345	[5,4,3,2,1]
 
-def solution(s):
-    if len(s)%2==0 :
-        answer = s[int(len(s)/2)-1:int(len(s)/2)+1]
-    else:
-        answer = s[int(len(s)/2)]
+def solution(n):
+    answer = []
+    n = str(n)
+    # print('***'+n[3])
+    # print(n)
+    for i in range(len(n)-1,-1,-1):
+        answer.append(int(n[i]))
     return answer
+
+num = solution(12345)
+print(num)

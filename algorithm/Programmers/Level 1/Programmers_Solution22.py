@@ -1,17 +1,104 @@
-# 문자열 s에 나타나는 문자를 큰것부터 작은 순으로 정렬해 새로운 문자열을 리턴하는 함수, solution을 완성해주세요.
-# s는 영문 대소문자로만 구성되어 있으며, 대문자는 소문자보다 작은 것으로 간주합니다.
+# 스마트폰 전화 키패드의 각 칸에 다음과 같이 숫자들이 적혀 있습니다.
 #
-# 제한 사항
-# str은 길이 1 이상인 문자열입니다.
+# kakao_phone1.png
+#
+# 이 전화 키패드에서 왼손과 오른손의 엄지손가락만을 이용해서 숫자만을 입력하려고 합니다.
+# 맨 처음 왼손 엄지손가락은 * 키패드에 오른손 엄지손가락은 # 키패드 위치에서 시작하며, 엄지손가락을 사용하는 규칙은 다음과 같습니다.
+#
+# 엄지손가락은 상하좌우 4가지 방향으로만 이동할 수 있으며 키패드 이동 한 칸은 거리로 1에 해당합니다.
+# 왼쪽 열의 3개의 숫자 1, 4, 7을 입력할 때는 왼손 엄지손가락을 사용합니다.
+# 오른쪽 열의 3개의 숫자 3, 6, 9를 입력할 때는 오른손 엄지손가락을 사용합니다.
+# 가운데 열의 4개의 숫자 2, 5, 8, 0을 입력할 때는 두 엄지손가락의 현재 키패드의 위치에서 더 가까운 엄지손가락을 사용합니다.
+# 4-1. 만약 두 엄지손가락의 거리가 같다면, 오른손잡이는 오른손 엄지손가락, 왼손잡이는 왼손 엄지손가락을 사용합니다.
+# 순서대로 누를 번호가 담긴 배열 numbers, 왼손잡이인지 오른손잡이인 지를 나타내는 문자열 hand가 매개변수로 주어질 때, 각 번호를 누른 엄지손가락이 왼손인 지 오른손인 지를 나타내는 연속된 문자열 형태로 return 하도록 solution 함수를 완성해주세요.
+#
+# [제한사항]
+# numbers 배열의 크기는 1 이상 1,000 이하입니다.
+# numbers 배열 원소의 값은 0 이상 9 이하인 정수입니다.
+# hand는 "left" 또는 "right" 입니다.
+# "left"는 왼손잡이, "right"는 오른손잡이를 의미합니다.
+# 왼손 엄지손가락을 사용한 경우는 L, 오른손 엄지손가락을 사용한 경우는 R을 순서대로 이어붙여 문자열 형태로 return 해주세요.
 # 입출력 예
-# s	return
-# Zbcdefg	gfedcbZ
+# numbers	hand	result
+# [1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5]	"right"	"LRLLLRLLRRL"
+# [7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2]	"left"	"LRLLRRLLLRR"
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]	"right"	"LLRLLRLLRL"
+# 입출력 예에 대한 설명
+# 입출력 예 #1
+#
+# 순서대로 눌러야 할 번호가 [1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5]이고, 오른손잡이입니다.
+#
+# 왼손 위치	오른손 위치	눌러야 할 숫자	사용한 손	설명
+# *	#	1	L	1은 왼손으로 누릅니다.
+# 1	#	3	R	3은 오른손으로 누릅니다.
+# 1	3	4	L	4는 왼손으로 누릅니다.
+# 4	3	5	L	왼손 거리는 1, 오른손 거리는 2이므로 왼손으로 5를 누릅니다.
+# 5	3	8	L	왼손 거리는 1, 오른손 거리는 3이므로 왼손으로 8을 누릅니다.
+# 8	3	2	R	왼손 거리는 2, 오른손 거리는 1이므로 오른손으로 2를 누릅니다.
+# 8	2	1	L	1은 왼손으로 누릅니다.
+# 1	2	4	L	4는 왼손으로 누릅니다.
+# 4	2	5	R	왼손 거리와 오른손 거리가 1로 같으므로, 오른손으로 5를 누릅니다.
+# 4	5	9	R	9는 오른손으로 누릅니다.
+# 4	9	5	L	왼손 거리는 1, 오른손 거리는 2이므로 왼손으로 5를 누릅니다.
+# 5	9	-	-
+# 따라서 "LRLLLRLLRRL"를 return 합니다.
+#
+# 입출력 예 #2
+#
+# 왼손잡이가 [7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2]를 순서대로 누르면 사용한 손은 "LRLLRRLLLRR"이 됩니다.
+#
+# 입출력 예 #3
+#
+# 오른손잡이가 [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]를 순서대로 누르면 사용한 손은 "LLRLLRLLRL"이 됩니다.
+import switch as switch
 
-def solution(s):
+
+def solution(numbers, hand):
     answer = ''
-    answer = sorted(s,reverse=True)
+    # 각 버튼별 위치
+    button_position = [[3, 1], [0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]]
+    # 왼손 초기 위치
+    left = [3, 0]
+    # 오른손 초기 위치
+    right = [3, 2]
 
-    return ''.join(answer)
+    def set_left(number):
+        nonlocal answer, left
+        left = button_position[number]
+        answer = answer + 'L'
 
-ans = solution('apple')
-print(ans)
+    def set_right(number):
+        nonlocal answer, right
+        right = button_position[number]
+        answer = answer + 'R'
+
+    for number in numbers:
+        # 왼쪽버튼 처리
+        if number in [1, 4, 7]:
+            set_left(number)
+        # 오른쪽 버튼 처리
+        elif number in [3, 6, 9]:
+            set_right(number)
+        # 가운데 버튼이라면
+        else:
+            # 왼손과 오른손의 거리 계산하기
+            left_distance = abs(left[0] - button_position[number][0]) + abs(left[1] - button_position[number][1])
+            right_distance = abs(right[0] - button_position[number][0]) + abs(right[1] - button_position[number][1])
+            # 거리가 같다면
+            if left_distance == right_distance:
+                # 오른손잡이 일때
+                if hand == 'right':
+                    set_right(number)
+                # 왼손잡이 일때
+                else:
+                    set_left(number)
+            # 왼쪽이 거리가 짧다면
+            elif left_distance < right_distance:
+                set_left(number)
+            # 오른쪽 거리가 짧다면
+            else:
+                set_right(number)
+    # 결과 반환
+    return answer
+
+print(solution([1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5],"right"))

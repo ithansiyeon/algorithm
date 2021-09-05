@@ -1,33 +1,26 @@
-# array의 각 element 중 divisor로 나누어 떨어지는 값을 오름차순으로 정렬한 배열을 반환하는 함수, solution을 작성해주세요.
-# divisor로 나누어 떨어지는 element가 하나도 없다면 배열에 -1을 담아 반환하세요.
+# 임의의 양의 정수 n에 대해, n이 어떤 양의 정수 x의 제곱인지 아닌지 판단하려 합니다.
+# n이 양의 정수 x의 제곱이라면 x+1의 제곱을 리턴하고, n이 양의 정수 x의 제곱이 아니라면 -1을 리턴하는 함수를 완성하세요.
 #
-# 제한사항
-# arr은 자연수를 담은 배열입니다.
-# 정수 i, j에 대해 i ≠ j 이면 arr[i] ≠ arr[j] 입니다.
-# divisor는 자연수입니다.
-# array는 길이 1 이상인 배열입니다.
+# 제한 사항
+# n은 1이상, 50000000000000 이하인 양의 정수입니다.
 # 입출력 예
-# arr	divisor	return
-# [5, 9, 7, 10]	5	[5, 10]
-# [2, 36, 1, 3]	1	[1, 2, 3, 36]
-# [3,2,6]	10	[-1]
+# n	return
+# 121	144
+# 3	-1
 # 입출력 예 설명
 # 입출력 예#1
-# arr의 원소 중 5로 나누어 떨어지는 원소는 5와 10입니다. 따라서 [5, 10]을 리턴합니다.
+# 121은 양의 정수 11의 제곱이므로, (11+1)를 제곱한 144를 리턴합니다.
 #
 # 입출력 예#2
-# arr의 모든 원소는 1으로 나누어 떨어집니다. 원소를 오름차순으로 정렬해 [1, 2, 3, 36]을 리턴합니다.
-#
-# 입출력 예#3
-# 3, 2, 6은 10으로 나누어 떨어지지 않습니다. 나누어 떨어지는 원소가 없으므로 [-1]을 리턴합니다.
-
-def solution(arr, divisor):
-    answer = []
-
-    for i in arr:
-        if i % divisor == 0 :
-            answer.append(i)
-    answer = sorted(answer)
-    if len(answer) == 0 :
-        answer.append(-1)
+# 3은 양의 정수의 제곱이 아니므로, -1을 리턴합니다.
+import math
+def solution(n):
+    answer = 0
+    loop = True
+    for i in range(1,int(math.sqrt(n))+1):
+        if n == pow(i,2):
+            loop = True
+            return pow(i+1,2)
+        else: loop = False
+    if(not loop): return -1
     return answer

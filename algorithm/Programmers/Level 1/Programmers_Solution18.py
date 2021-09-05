@@ -1,48 +1,22 @@
-# 자연수 n이 매개변수로 주어집니다. n을 3진법 상에서 앞뒤로 뒤집은 후, 이를 다시 10진법으로 표현한 수를 return 하도록 solution 함수를 완성해주세요.
-#
-# 제한사항
-# n은 1 이상 100,000,000 이하인 자연수입니다.
+# 함수 solution은 정수 n을 매개변수로 입력받습니다.
+# n의 각 자릿수를 큰것부터 작은 순으로 정렬한 새로운 정수를 리턴해주세요. 예를들어 n이 118372면 873211을 리턴하면 됩니다.
+# 제한 조건
+# n은 1이상 8000000000 이하인 자연수입니다.
 # 입출력 예
-# n	result
-# 45	7
-# 125	229
-# 입출력 예 설명
-# 입출력 예 #1
-#
-# 답을 도출하는 과정은 다음과 같습니다.
-# n (10진법)	n (3진법)	앞뒤 반전(3진법)	10진법으로 표현
-# 45	1200	0021	7
-# 따라서 7을 return 해야 합니다.
-# 입출력 예 #2
-#
-# 답을 도출하는 과정은 다음과 같습니다.
-# n (10진법)	n (3진법)	앞뒤 반전(3진법)	10진법으로 표현
-# 125	11122	22111	229
-# 따라서 229를 return 해야 합니다.
-
+# n	return
+# 118372	873211
 def solution(n):
     answer = 0
+    n = str(n)
     list = []
-    while n != 0:
-        list.append(n % 3)
-        n = int(n / 3)
-        # print(n)
-    # print(list)
 
-    for i in range(-1,-len(list)-1,-1):
-        # print(list[i])
-        # print(list[i])
-        if i==-1 : answer+=list[i]
-        else :
-            num = list[i]
-            for j in range(i,-1):
-                num = num * 3
-                # print(num)
-            answer+=num
-            num = 0
-        # print(answer)
+    for i in range(len(n)):
+        list.append(n[i])
 
+    list.sort()
+    list.reverse()
+    print(list)
+    answer = "".join(list)
     return answer
 
-num=solution(45)
-print(num)
+print(solution(118372))

@@ -1,34 +1,21 @@
-# 대문자와 소문자가 섞여있는 문자열 s가 주어집니다.
-# s에 'p'의 개수와 'y'의 개수를 비교해 같으면 True, 다르면 False를 return 하는 solution를 완성하세요.
-# 'p', 'y' 모두 하나도 없는 경우는 항상 True를 리턴합니다. 단, 개수를 비교할 때 대문자와 소문자는 구별하지 않습니다.
+# 어떤 문장의 각 알파벳을 일정한 거리만큼 밀어서 다른 알파벳으로 바꾸는 암호화 방식을 시저 암호라고 합니다.
+# 예를 들어 AB는 1만큼 밀면 BC가 되고, 3만큼 밀면 DE가 됩니다. z는 1만큼 밀면 a가 됩니다.
+# 문자열 s와 거리 n을 입력받아 s를 n만큼 민 암호문을 만드는 함수, solution을 완성해 보세요.
 #
-# 예를 들어 s가 pPoooyY면 true를 return하고 Pyy라면 false를 return합니다.
-#
-# 제한사항
-# 문자열 s의 길이 : 50 이하의 자연수
-# 문자열 s는 알파벳으로만 이루어져 있습니다.
+# 제한 조건
+# 공백은 아무리 밀어도 공백입니다.
+# s는 알파벳 소문자, 대문자, 공백으로만 이루어져 있습니다.
+# s의 길이는 8000이하입니다.
+# n은 1 이상, 25이하인 자연수입니다.
 # 입출력 예
-# s	answer
-# pPoooyY	true
-# Pyy	false
-# 입출력 예 설명
-# 입출력 예 #1
-# 'p'의 개수 2개, 'y'의 개수 2개로 같으므로 true를 return 합니다.
-#
-# 입출력 예 #2
-# 'p'의 개수 1개, 'y'의 개수 2개로 다르므로 false를 return 합니다.
+# s	n	result
+# AB	1	BC
+# z	1	a
+# a B z	4	e F d
 
-def solution(s):
-    answer = True
-    ycnt = 0
-    pcnt = 0
-    for i in range(0,len(s)) :
-        if(s[i].upper() == 'Y') : ycnt+=1
-        if(s[i].upper() == 'P') : pcnt+=1
-    if(ycnt==pcnt) : return True
-    elif(ycnt==0 and pcnt==0) : return True
-
-    return False
-
-print(solution("Pyy"))
-
+def solution(s, n):
+    s = list(s)
+    for i in range(len(s)):
+        if s[i].isupper(): s[i]=chr((ord(s[i])-ord('A')+ n)%26+ord('A'))
+        elif s[i].islower(): s[i]=chr((ord(s[i])-ord('a')+ n)%26+ord('a'))
+    return "".join(s)

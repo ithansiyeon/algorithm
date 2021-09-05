@@ -1,24 +1,19 @@
-# 1부터 입력받은 숫자 n 사이에 있는 소수의 개수를 반환하는 함수, solution을 만들어 보세요.
+# 문자열 s의 길이가 4 혹은 6이고, 숫자로만 구성돼있는지 확인해주는 함수, solution을 완성하세요.
+# 예를 들어 s가 a234이면 False를 리턴하고 1234라면 True를 리턴하면 됩니다.
 #
-# 소수는 1과 자기 자신으로만 나누어지는 수를 의미합니다.
-# (1은 소수가 아닙니다.)
-#
-# 제한 조건
-# n은 2이상 1000000이하의 자연수입니다.
+# 제한 사항
+# s는 길이 1 이상, 길이 8 이하인 문자열입니다.
 # 입출력 예
-# n	result
-# 10	4
-# 5	3
-# 입출력 예 설명
-# 입출력 예 #1
-# 1부터 10 사이의 소수는 [2,3,5,7] 4개가 존재하므로 4를 반환
-#
-# 입출력 예 #2
-# 1부터 5 사이의 소수는 [2,3,5] 3개가 존재하므로 3를 반환
+# s	return
+# a234	false
+# 1234	true
+def solution(s):
+    answer = True
+    for i in range(len(s)):
+        if (s[i]>='0' and s[i]<='9') and (len(s) == 4 or len(s) == 6):
+            answer = True
+        else: return False
+    return answer
 
-def solution(n):
- a=set([i for i in range(3,n+1,2)])
- for i in range(3,n+1,2):
-        if i in a:
-            a-=set([i for i in range(i*2,n+1,i)])
- return len(a)+1
+n=solution("1234")
+print(n)

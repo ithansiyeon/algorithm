@@ -1,44 +1,25 @@
-# 정수 배열 numbers가 주어집니다.
-# numbers에서 서로 다른 인덱스에 있는 두 개의 수를 뽑아 더해서 만들 수 있는 모든 수를 배열에 오름차순으로 담아 return 하도록 solution 함수를 완성해주세요.
-#
-# 제한사항
-# numbers의 길이는 2 이상 100 이하입니다.
-# numbers의 모든 수는 0 이상 100 이하입니다.
-# 입출력 예
-# numbers	result
-# [2,1,3,4,1]	[2,3,4,5,6,7]
-# [5,0,2,7]	[2,5,7,9,12]
-# 입출력 예 설명
-# 입출력 예 #1
-#
-# 2 = 1 + 1 입니다. (1이 numbers에 두 개 있습니다.)
-# 3 = 2 + 1 입니다.
-# 4 = 1 + 3 입니다.
-# 5 = 1 + 4 = 2 + 3 입니다.
-# 6 = 2 + 4 입니다.
-# 7 = 3 + 4 입니다.
-# 따라서 [2,3,4,5,6,7] 을 return 해야 합니다.
-# 입출력 예 #2
-#
-# 2 = 0 + 2 입니다.
-# 5 = 5 + 0 입니다.
-# 7 = 0 + 7 = 5 + 2 입니다.
-# 9 = 2 + 7 입니다.
-# 12 = 5 + 7 입니다.
-# 따라서 [2,5,7,9,12] 를 return 해야 합니다.
+# 문자열 s는 한 개 이상의 단어로 구성되어 있습니다. 각 단어는 하나 이상의 공백문자로 구분되어 있습니다.
+# 각 단어의 짝수번째 알파벳은 대문자로, 홀수번째 알파벳은 소문자로 바꾼 문자열을 리턴하는 함수, solution을 완성하세요.
+# 제한 사항 문자열 전체의 짝/홀수 인덱스가 아니라, 단어(공백을 기준)별로 짝/홀수 인덱스를 판단해야합니다.
+# 첫 번째 글자는 0번째 인덱스로 보아 짝수번째 알파벳으로 처리해야 합니다. 입출력 예 s
+# return try hello world	TrY HeLlO WoRlD 입출력 예 설명 try hello world는 세 단어 try, hello, world로 구성되어 있습니다. 각 단어의 짝수번째
+# 문자를 대문자로, 홀수번째 문자를 소문자로 바꾸면 TrY, HeLlO, WoRlD입니다. 따라서 TrY HeLlO WoRlD 를 리턴합니다.
 
-def solution(numbers):
-    answer = []
+def solution(s):
+    answer = ''
+    cnt = 0
+    for i in range(len(s)):
+        if cnt % 2 == 0 and s[i] != " ":
+            answer += s[i].upper()
+            cnt += 1
+        elif s[i] == " ":
+            cnt = 0
+            answer += " "
+        elif cnt % 2 == 1 and s[i] != " ":
+            answer += s[i].lower()
+            cnt += 1
 
-    for i in range(len(numbers)):
-        for j in range(i+1,len(numbers)):
-            answer.append(numbers[i]+numbers[j])
-    # print(answer)
-    answer=set(answer)
-    # print(answer)
-    answer=sorted(answer)
-    # print(answer)
     return answer
 
-num = solution([2,1,3,4,1])
-print(num)
+
+

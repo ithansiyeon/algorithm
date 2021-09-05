@@ -1,25 +1,36 @@
-# 문자열 s는 한 개 이상의 단어로 구성되어 있습니다. 각 단어는 하나 이상의 공백문자로 구분되어 있습니다.
-# 각 단어의 짝수번째 알파벳은 대문자로, 홀수번째 알파벳은 소문자로 바꾼 문자열을 리턴하는 함수, solution을 완성하세요.
-# 제한 사항 문자열 전체의 짝/홀수 인덱스가 아니라, 단어(공백을 기준)별로 짝/홀수 인덱스를 판단해야합니다.
-# 첫 번째 글자는 0번째 인덱스로 보아 짝수번째 알파벳으로 처리해야 합니다. 입출력 예 s
-# return try hello world	TrY HeLlO WoRlD 입출력 예 설명 try hello world는 세 단어 try, hello, world로 구성되어 있습니다. 각 단어의 짝수번째
-# 문자를 대문자로, 홀수번째 문자를 소문자로 바꾸면 TrY, HeLlO, WoRlD입니다. 따라서 TrY HeLlO WoRlD 를 리턴합니다.
+# 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다.
+# 예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다. 자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
+#
+# 제한 조건
+# x는 1 이상, 10000 이하인 정수입니다.
+# 입출력 예
+# arr	return
+# 10	true
+# 12	true
+# 11	false
+# 13	false
+# 입출력 예 설명
+# 입출력 예 #1
+# 10의 모든 자릿수의 합은 1입니다. 10은 1로 나누어 떨어지므로 10은 하샤드 수입니다.
+#
+# 입출력 예 #2
+# 12의 모든 자릿수의 합은 3입니다. 12는 3으로 나누어 떨어지므로 12는 하샤드 수입니다.
+#
+# 입출력 예 #3
+# 11의 모든 자릿수의 합은 2입니다. 11은 2로 나누어 떨어지지 않으므로 11는 하샤드 수가 아닙니다.
+#
+# 입출력 예 #4
+# 13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.
 
-def solution(s):
-    answer = ''
-    cnt = 0
-    for i in range(len(s)):
-        if cnt % 2 == 0 and s[i] != " ":
-            answer += s[i].upper()
-            cnt += 1
-        elif s[i] == " ":
-            cnt = 0
-            answer += " "
-        elif cnt % 2 == 1 and s[i] != " ":
-            answer += s[i].lower()
-            cnt += 1
+def solution(x):
+    answer = True
+    num = str(x)
+    snum=sum([int(i) for i in str(x)])
+
+    if x % snum == 0:
+        return True
+    else: return False
 
     return answer
 
-
-
+print(solution(4))

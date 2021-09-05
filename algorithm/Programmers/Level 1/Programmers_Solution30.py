@@ -1,26 +1,24 @@
-# 임의의 양의 정수 n에 대해, n이 어떤 양의 정수 x의 제곱인지 아닌지 판단하려 합니다.
-# n이 양의 정수 x의 제곱이라면 x+1의 제곱을 리턴하고, n이 양의 정수 x의 제곱이 아니라면 -1을 리턴하는 함수를 완성하세요.
+# 이 문제에는 표준 입력으로 두 개의 정수 n과 m이 주어집니다.
+# 별(*) 문자를 이용해 가로의 길이가 n, 세로의 길이가 m인 직사각형 형태를 출력해보세요.
 #
-# 제한 사항
-# n은 1이상, 50000000000000 이하인 양의 정수입니다.
-# 입출력 예
-# n	return
-# 121	144
-# 3	-1
-# 입출력 예 설명
-# 입출력 예#1
-# 121은 양의 정수 11의 제곱이므로, (11+1)를 제곱한 144를 리턴합니다.
+# 제한 조건
+# n과 m은 각각 1000 이하인 자연수입니다.
+# 예시
+# 입력
 #
-# 입출력 예#2
-# 3은 양의 정수의 제곱이 아니므로, -1을 리턴합니다.
-import math
-def solution(n):
-    answer = 0
-    loop = True
-    for i in range(1,int(math.sqrt(n))+1):
-        if n == pow(i,2):
-            loop = True
-            return pow(i+1,2)
-        else: loop = False
-    if(not loop): return -1
-    return answer
+# 5 3
+# 출력
+#
+# *****
+# *****
+# *****
+
+n, m = map(int, input().strip().split(' '))
+answer=""
+for i in range(0,m):
+    for j in range(0,n):
+        print("*",end='')
+        answer+="*"
+    print()
+    answer+="\r\n"
+
