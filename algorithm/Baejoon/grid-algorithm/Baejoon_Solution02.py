@@ -1,11 +1,8 @@
-from sys import stdin
-n = int(stdin.readline())
-lines = []
-for i in range(n):
-    a, b = map(int, stdin.readline().split())
-    lines.append((a, b))
-lines.sort()
-a_to_b = list(map(lambda x: x[1], lines))
-dp = [a_to_b[0]]
-
-    
+n = int(input())
+time = sorted([tuple(map(int, input().split())) for _ in range(n)], key=lambda x:(x[1], x[0]))
+ans = end = 0
+for s, e in time:
+    if s >= end:
+        ans += 1
+        end = e
+print(ans)
