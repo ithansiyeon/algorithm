@@ -1,24 +1,20 @@
-from collections import defaultdict
-
-
 def solution(tickets):
+    dic = {}
+    stack = []
     answer = []
-    routes = defaultdict(list)
-    for i in range(len(tickets)):
-        routes[tickets[i][0]].append(tickets[i][1])
-
-    for key in routes.keys():
-        routes[key].sort(reverse=True)
-
-    stack = ['ICN']
+    for i in tickets:
+        if i[0] not in dic.keys():
+            dic[i[0]] = [i[1]]
+        else: dic[i[0]].append(i[1])
+        dic[i[0]].sort(reverse=True)
+    stack.append("ICN")
     while stack:
         tmp = stack[-1]
-        if not routes[tmp]:
+        if tmp not in dic.keys() or not dic[tmp]:
             answer.append(stack.pop())
         else:
-            stack.append(routes[tmp].pop())
+            stack.append(dic[tmp].pop())
     answer.reverse()
     return answer
 
 print(solution([["ICN", "JFK"], ["HND", "IAD"], ["JFK", "HND"]]))
-
