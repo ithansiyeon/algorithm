@@ -11,7 +11,7 @@ visited[0][0] = True
 path.append([0,0])
 dx = [0,0,1,-1]
 dy = [1,-1,0,0]
-result = 0
+
 while path:
     x,y = path.popleft()
     for i in range(4):
@@ -21,7 +21,6 @@ while path:
             if miro[nx][ny] == 1:
                 miro[nx][ny] = miro[x][y] + 1
                 path.append([nx,ny])
-                result += 1
 print(miro[n-1][m-1])
 
 
