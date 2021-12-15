@@ -1,17 +1,16 @@
 n = int(input())
-dp = [0]*(n+1)
-def fibo(x):
-    if x == 1:
-        return 1
-    elif x == 0:
-        return 0
-    if dp[x] != 0:
-        return dp[x]
+dp = [0 for _ in range(n+1)]
+
+def pibo(n):
+    if n == 0:
+        return dp[0]
+    elif n == 1:
+        dp[1] = 1
+        return dp[1]
+    if dp[n] != 0:
+        return dp[n]
     else:
-        dp[x] = fibo(x-1) + fibo(x-2)
-        return dp[x]
+        dp[n] = pibo(n-1) + pibo(n-2)
+        return dp[n]
 
-print(fibo(n))
-
-
-
+print(pibo(n))

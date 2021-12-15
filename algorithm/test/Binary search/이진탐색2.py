@@ -11,7 +11,6 @@ def binary_search(array,target,start,end):
 
 
 array = [1,3,4,6,7,8,9,13]
-
 result = binary_search(array,3,0,len(array)-1)
 if result == None:
     print("해당 원소가 존재하지 않습니다.")
