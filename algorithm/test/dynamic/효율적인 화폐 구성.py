@@ -11,7 +11,6 @@ for i in range(1,m+1):
     for j in array:
         dp[i]=min(1+dp[i-j],dp[i])
 
-
 if dp[m] == 10001:
     print(-1)
 else:
