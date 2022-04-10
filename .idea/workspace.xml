@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51893a6b-981f-417a-9bc2-11b05e02b0e2" name="Changes" comment="commit" />
+    <list default="true" id="51893a6b-981f-417a-9bc2-11b05e02b0e2" name="Changes" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/bruteForce/영화감독 숌.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/bruteForce/체스판 다시 칠하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/Binary search/떡볶이 떡 만들기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/Binary search/입국심사.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/bfs/게임 맵 최단거리.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/bfs/나이트의 이동.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/bfs/블록이동하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/bfs/인구이동.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/bfs/특정 거리의 도시 찾기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dfs/바이러스.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dfs/안전영역.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dfs/연구소.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dfs/음식물 피하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dijkstra/녹색 옷 입애가 젤다지1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dijkstra/녹색 옷 입은 애가 젤다지.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dijkstra/미래 도시.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dijkstra/숨바꼭질.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dijkstra/숨바꼭질[bfs].py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dijkstra/정확한 순위.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dynamic/1로 만들기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dynamic/★못생긴 수.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dynamic/★병사 배치하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dynamic/가장 큰 정사각형.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dynamic/개미전사.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dynamic/동전 1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dynamic/바닥공사.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dynamic/정수 삼각형.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dynamic/줄세우기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/dynamic/편집거리.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/graph/★최종순위.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/graph/개선된 서로소 집합 알고리즘 소스코드.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/graph/기본적인 서로소 집합 알고리즘.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/graph/서로소 집합 자료구조.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/graph/서로소 집합을 활용한 사이클 판별 소스코드.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/graph/서로소 집합을 활용한 사이클 판별.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/graph/어두운길.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/graph/크루스칼 알고리즘 소스코드.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/presentation/Baejoon/소수구하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/presentation/Baejoon/소수구하기2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/sorting/두 배열의 원소 교체.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/sorting/성적이 낮은 순서로 학생 출력하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/sorting/카드 정렬하기.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +60,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,28 +97,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.회문 문자열 검사">
-    <configuration name="회문 문자열 검사" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="algorithm-python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/회문 문자열 검사.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="뒤집은 소수" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,6 +133,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션2/주사위 게임.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="회문 문자열 검사" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/회문 문자열 검사.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,7 +207,8 @@
       <workItem from="1649598593786" duration="12000" />
       <workItem from="1649598608110" duration="5000" />
       <workItem from="1649598616662" duration="91000" />
-      <workItem from="1649598725758" duration="3249000" />
+      <workItem from="1649598725758" duration="3833000" />
+      <workItem from="1649604533456" duration="41000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1649595557884</created>
@@ -178,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649603891911</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit">
+      <created>1649604151020</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649604151020</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
