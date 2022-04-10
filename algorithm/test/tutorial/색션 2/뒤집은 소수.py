@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input","rt")
+sys.stdin = open("input", "rt")
 
 n = int(input())
 nums = input().split()

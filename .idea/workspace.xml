@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51893a6b-981f-417a-9bc2-11b05e02b0e2" name="Changes" comment="commit" />
+    <list default="true" id="51893a6b-981f-417a-9bc2-11b05e02b0e2" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 2/k번째 수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 2/k번째 큰 수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 2/k번쨰 약수.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 2/대표값.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 2/소수(에라토스테네스 체).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 2/점수계산.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 2/정다면체.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/회문 문자열 검사.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/tutorial/input" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 2/input" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/tutorial/뒤집은 소수.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 2/뒤집은 소수.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/test/tutorial/주사위 게임.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 2/주사위 게임.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +34,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27O0QenfNV7rK6lyDynX8oTJT2n" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,11 +45,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/algorithm/test/tutorial" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
-    <configuration name="주사위 게임" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/algorithm/test/tutorial" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/algorithm/test/tutorial/색션2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.회문 문자열 검사">
+    <configuration name="회문 문자열 검사" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -41,12 +65,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/주사위 게임.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/회문 문자열 검사.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -77,6 +101,56 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="주사위 게임" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션2/주사위 게임.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="점수계산" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션2/점수계산.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.회문 문자열 검사" />
+        <item itemvalue="Python.점수계산" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -93,6 +167,7 @@
       <workItem from="1649598593786" duration="12000" />
       <workItem from="1649598608110" duration="5000" />
       <workItem from="1649598616662" duration="91000" />
+      <workItem from="1649598725758" duration="2786000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1649595557884</created>
@@ -101,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649595557884</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit">
+      <created>1649598775349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649598775349</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,5 +206,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/algorithm_python$_.coverage" NAME="주사위 게임 Coverage Results" MODIFIED="1649266164518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/test/tutorial" />
+    <SUITE FILE_PATH="coverage/algorithm_python$.coverage" NAME="점수계산 Coverage Results" MODIFIED="1649602495445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/test/tutorial" />
   </component>
 </project>
