@@ -25,7 +25,6 @@ while True:
    if y == n:
        break
    for i in range(a,b):
-       print(sqaure[y][i])
        hap+=sqaure[y][i]
    y+=1
    if y <= n//2:
