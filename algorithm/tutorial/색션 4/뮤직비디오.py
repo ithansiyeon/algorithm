@@ -3,21 +3,21 @@ sys.stdin = open("in5.txt", "rt")
 n, m = map(int,input().split())
 nlist = list(map(int,input().split()))
 
-start = 1
+start = max(nlist)
 end = sum(nlist)
 res = 0
 maxx = max(nlist)
 
-while True:
+while start <= end:
     mid = (start+end)//2
-    sum = 0
+    hap = 0
     cnt = 1
     for x in nlist:
-        if sum + x > mid:
+        if hap + x > mid:
             cnt+=1
-            sum = x
+            hap = x
         else:
-            sum+=x
+            hap+=x
 
     if cnt <= m and mid >= maxx:
         res = mid
@@ -25,7 +25,5 @@ while True:
     else:
         start = mid + 1
 
-    if start > end:
-        break
 print(res)
 
