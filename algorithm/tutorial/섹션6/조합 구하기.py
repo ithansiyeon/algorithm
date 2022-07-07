@@ -7,7 +7,7 @@ def dfs(l,val):
         cnt+=1
     else:
         for i in range(val,n+1):
-            res[i]=i
+            res[l]=i
             dfs(l+1,res[l]+1)
 
 if __name__ == '__main__':
