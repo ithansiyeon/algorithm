@@ -1,16 +1,17 @@
 n = int(input())
-list = []
-def hanoi(n,from_,to_,via):
-    global cnt
-    if n == 1:
-        list.append([from_,to_])
+stars = [[" " for _ in range(n)] for _ in range(n)]
+
+def star_print(size,x,y):
+    if size == 1:
+        stars[x][y] = '*'
         return
+    size = size // 3
+    for i in range(3):
+        for j in range(3):
+            if i == 1 and j == 1: continue
+            star_print(size,x+i*size,y+j*size)
 
-    hanoi(n-1,from_,via,to_)
-    list.append([from_,to_])
-    hanoi(n-1,via,to_,from_)
+star_print(n,0,0)
 
-hanoi(n,1,3,2)
-print(len(list))
-for i in list:
-    print(i[0],i[1])
+for s in stars:
+    print(''.join(s))
