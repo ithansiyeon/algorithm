@@ -1,21 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51893a6b-981f-417a-9bc2-11b05e02b0e2" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/격자판 최대합.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/두 리스트 합치기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/수들의 합.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/숫자만 추출.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/카드 역배치.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/algorithm-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/algorithm-python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="51893a6b-981f-417a-9bc2-11b05e02b0e2" name="Changes" comment="알고리즘">
+      <change afterPath="$PROJECT_DIR$/algorithm/Baejoon/bruteForce/덩치.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/Baejoon/bruteForce/분해합.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/Baejoon/bruteForce/블랙잭.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/Baejoon/bruteForce/영화감독 숌.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/Baejoon/bruteForce/체스판 다시 칠하기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/codility/Binary Gap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/coding/다이나믹 프로그래밍/1로 만들기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/coding/이진탐색/떡볶이 떡 만들기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/coding/이진탐색/반복문으로 구현한 이진 탐색.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/coding/이진탐색/부품 찾기.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/coding/이진탐색/재귀 함수로 구현한 이진 탐색.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/test5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/in1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/in1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/in2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/in2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/in3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/in3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/in4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/in4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/in5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/in5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/회문 문자열 검사.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/회문 문자열 검사.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/2696번 중앙값 구하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/Baejoon_Solution01.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/손익분기점.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/Baejoon_Solution02.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/벌집.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/Baejoon_Solution03.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/분수찾기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/Baejoon_Solution04.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/달팽이는 올라가고 싶다.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/Baejoon_Solution05.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/ACM 호텔.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/Baejoon_Solution06.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/부녀회장이 될테야.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/Baejoon_Solution07.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/설탕 배달.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/Baejoon_Solution08.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/큰 수 A+B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/Baejoon_Solution09.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/Fly me to the Alpha Centauri.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath1/Baejoon_Solution10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/Baejoon_Solution01.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/소수 찾기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/Baejoon_Solution02.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/소수.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/Baejoon_Solution03.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/소인수분해.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/Baejoon_Solution04.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/소수 구하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/Baejoon_Solution05.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/베르트랑 공존.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/Baejoon_Solution06.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/골드바흐의 추측.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/Baejoon_Solution07.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/직사각형에서 탈출.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/Baejoon_Solution08.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/네 번째 점.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/Baejoon_Solution09.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/직각삼각형.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/Baejoon_Solution10.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/택시 기하학.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/Baejoon_Solution11.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/basicMath2/터렛.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/for/Baejoon_Solution01.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/for/구구단.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/for/Baejoon_Solution02.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/for/A+B-3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/for/Baejoon_Solution03.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/for/합.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/for/Baejoon_Solution04.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/for/빠른 A+B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/for/Baejoon_Solution05.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/for/N 찍기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/for/Baejoon_Solution06.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/for/기찍 N.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/for/Baejoon_Solution07.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/for/A+B-7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/for/Baejoon_Solution08.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/for/A+B-8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/for/Baejoon_Solution09.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/for/별 찍기 - 1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/for/Baejoon_Solution10.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/for/별 찍기 - 2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/for/Baejoon_Solution11.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/for/X보다 작은 수.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/function/Baejoon_Solution01.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/function/정수 N개의 합.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/function/Baejoon_Solution02.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/function/셀프 넘버.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/function/Baejoon_Solution03.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/function/한수.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/if/Baejoon_Solution01.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/if/두 수 비교하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/if/Baejoon_Solution02.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/if/시험성적.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/if/Baejoon_Solution03.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/if/윤년.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/if/Baejoon_Solution04.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/if/사분면 고르기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/if/Baejoon_Solution05.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/if/알람.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/Baejoon_Solution01.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/최소, 최대.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/Baejoon_Solution02.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/최댓값.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/Baejoon_Solution03.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/숫자의 개수.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/Baejoon_Solution04.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/나머지.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/Baejoon_Solution05.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/평균.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/Baejoon_Solution06.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/OX 퀴즈.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/Baejoon_Solution07.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/one-dimensional array/평균은 넘겠지.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/recursive/Baejoon_Solution01.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/recursive/팩토리얼.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/recursive/Baejoon_Solution02.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/recursive/피보나치 수 5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/recursive/Baejoon_Solution04-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/recursive/별 찍기 - 10 v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/recursive/Baejoon_Solution04.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/recursive/별 찍기 - 10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/recursive/Baejoon_Solution05.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/recursive/하노이 탑 이동 순서.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/sorting/Baejoon_Solution01.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/sorting/수 정렬하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/sorting/Baejoon_Solution02.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/sorting/수 정렬하기 2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/sorting/Baejoon_Solution03.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/sorting/수 정렬하기 3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/sorting/Baejoon_Solution04.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/sorting/통계학.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/sorting/Baejoon_Solution05.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/sorting/소트인사이드.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/sorting/Baejoon_Solution06.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/sorting/좌표 정렬하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/sorting/Baejoon_Solution07.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/sorting/좌표 정렬하기 2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/sorting/Baejoon_Solution08.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/sorting/단어 정렬.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/sorting/Baejoon_Solution09.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/sorting/나이순 정렬.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/sorting/Baejoon_Solution10.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/sorting/좌표 압축.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/string/Baejoon_Solution01.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/string/아스키 코드.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/string/Baejoon_Solution02.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/string/숫자의 합.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/string/Baejoon_Solution03.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/string/알파벳 찾기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/string/Baejoon_Solution04.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/string/문자열 반복.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/string/Baejoon_Solution05.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/string/단어 공부.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/string/Baejoon_Solution06.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/string/단어의 개수.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/string/Baejoon_Solution07.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/string/상수.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/string/Baejoon_Solution08.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/string/다이얼.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/string/Baejoon_Solution09.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/string/크로아티아 알파벳.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/string/Baejoon_Solution10.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/string/그룹 단어 체커.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/while/Baejoon_Solution01.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/while/A+B-5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/while/Baejoon_Solution02.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/while/A+B-4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/Baejoon/while/Baejoon_Solution03.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Baejoon/while/더하기 사이클.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,20 +137,27 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/algorithm/tutorial/섹션6" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/algorithm/tutorial/섹션6" />
+      <recent name="$PROJECT_DIR$/algorithm/tutorial/섹션 5" />
+      <recent name="$PROJECT_DIR$/algorithm/tutorial/색션 4" />
+      <recent name="$PROJECT_DIR$/algorithm/test/tutorial/색션 4" />
       <recent name="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
-      <recent name="$PROJECT_DIR$/algorithm/test/tutorial" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/algorithm/test/tutorial/색션2" />
+      <recent name="$PROJECT_DIR$/algorithm/codility" />
+      <recent name="$PROJECT_DIR$/algorithm/Programmers/LEVEL1" />
+      <recent name="$PROJECT_DIR$/algorithm/test" />
+      <recent name="$PROJECT_DIR$/algorithm/coding/그리디" />
+      <recent name="$PROJECT_DIR$/algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.격자판 최대합">
-    <configuration name="회문 문자열 검사" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.좌표 압축">
+    <configuration name="숫자만 추출" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -81,7 +170,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/회문 문자열 검사.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/숫자만 추출.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -90,7 +179,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="뒤집은 소수" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="위에서 아래로" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,12 +187,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/coding/정렬" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/뒤집은 소수.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/coding/정렬/위에서 아래로.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,7 +201,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="격자판 최대합" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="후위표기식 만들기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,12 +209,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/격자판 최대합.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5/후위표기식 만들기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,7 +223,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="수들의 합" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="조합 구하기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,12 +231,78 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/섹션6" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/수들의 합.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/섹션6/조합 구하기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="후위표기식 만들기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5/후위표기식 만들기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="단어 찾기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5/단어 찾기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="후위식 연산" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5/후위식 연산.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,7 +333,95 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="숫자만 추출" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="게임 개발" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/coding/구현" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/coding/구현/게임 개발.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="회의실 배정" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/색션 4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/색션 4/회의실 배정.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="게임 개발" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/coding/구현" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/coding/구현/게임 개발.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="중복순열 구하기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/섹션6" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/섹션6/중복순열 구하기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="수들의 합" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,7 +434,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/숫자만 추출.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/수들의 합.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -200,7 +443,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="주사위 게임" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="증가수열 만들기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,12 +451,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/색션 4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션2/주사위 게임.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/색션 4/증가수열 만들기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -222,7 +465,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="두 리스트 합치기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="격자판 회문수" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -235,7 +478,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/두 리스트 합치기.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/격자판 회문수.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -244,7 +487,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="점수계산" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="침몰하는 타이타닉" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,12 +495,518 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/색션 4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션2/점수계산.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/색션 4/침몰하는 타이타닉.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="격자판 최대합" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/격자판 최대합.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="공주 구하기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5/공주 구하기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="마구간 정하기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/색션 4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/색션 4/마구간 정하기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="교육과정 설계" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5/교육과정 설계.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="침몰하는 타이타닉" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/색션 4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/색션 4/침몰하는 타이타닉.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="좌표 압축" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/Baejoon/sorting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/Baejoon/sorting/좌표 압축.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="곶감" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/곶감.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="응급실" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5/응급실.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="재귀함수" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/coding/DFS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/coding/DFS/재귀함수.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="쇠막대기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5/쇠막대기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="봉우리" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/봉우리.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="거스름돈" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/coding" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/coding/거스름돈.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="곶감" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/곶감.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="사과나무" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 3/사과나무.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="역수열" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/색션 4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/색션 4/역수열.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="씨름선수" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/색션 4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/색션 4/씨름선수.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="뮤직비디오" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/색션 4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/색션 4/뮤직비디오.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="아나그램" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/tutorial/섹션 5/아나그램.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="이분검색" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test/tutorial/색션 4/이분검색.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/test3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -268,7 +1017,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.격자판 최대합" />
+        <item itemvalue="Python.좌표 압축" />
+        <item itemvalue="Python.test3" />
+        <item itemvalue="Python.test1" />
+        <item itemvalue="Python.test2" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +1048,62 @@
       <workItem from="1650210818827" duration="2118000" />
       <workItem from="1650281170613" duration="2859000" />
       <workItem from="1650291540969" duration="114000" />
-      <workItem from="1650378714091" duration="5006000" />
+      <workItem from="1650378714091" duration="5259000" />
+      <workItem from="1650469846719" duration="1873000" />
+      <workItem from="1650556407807" duration="3876000" />
+      <workItem from="1650691241657" duration="7719000" />
+      <workItem from="1650778377624" duration="5413000" />
+      <workItem from="1652018850543" duration="3209000" />
+      <workItem from="1652803496056" duration="3650000" />
+      <workItem from="1654012540896" duration="552000" />
+      <workItem from="1654051867448" duration="611000" />
+      <workItem from="1654056033787" duration="1335000" />
+      <workItem from="1654064026411" duration="12543000" />
+      <workItem from="1654091378788" duration="4519000" />
+      <workItem from="1654100591832" duration="403000" />
+      <workItem from="1654175730294" duration="6400000" />
+      <workItem from="1654186750693" duration="542000" />
+      <workItem from="1654227424133" duration="3141000" />
+      <workItem from="1654244238399" duration="2554000" />
+      <workItem from="1654502037754" duration="1210000" />
+      <workItem from="1654515429222" duration="6794000" />
+      <workItem from="1654528917867" duration="2959000" />
+      <workItem from="1654605031373" duration="8459000" />
+      <workItem from="1654695977835" duration="50000" />
+      <workItem from="1654696041515" duration="1199000" />
+      <workItem from="1654697259412" duration="4351000" />
+      <workItem from="1654785482955" duration="2810000" />
+      <workItem from="1654925597821" duration="1631000" />
+      <workItem from="1654927831474" duration="1390000" />
+      <workItem from="1654932453620" duration="1757000" />
+      <workItem from="1655650936027" duration="1742000" />
+      <workItem from="1655735825957" duration="2747000" />
+      <workItem from="1655817811298" duration="3749000" />
+      <workItem from="1655824418765" duration="580000" />
+      <workItem from="1656420449076" duration="5545000" />
+      <workItem from="1656513901019" duration="3035000" />
+      <workItem from="1656598960745" duration="1246000" />
+      <workItem from="1657026585909" duration="5533000" />
+      <workItem from="1657123474590" duration="2954000" />
+      <workItem from="1657203691321" duration="2266000" />
+      <workItem from="1657293869031" duration="3644000" />
+      <workItem from="1657334026709" duration="1610000" />
+      <workItem from="1657343877355" duration="776000" />
+      <workItem from="1657344876289" duration="2006000" />
+      <workItem from="1657367071397" duration="869000" />
+      <workItem from="1657375289022" duration="9705000" />
+      <workItem from="1657385404754" duration="380000" />
+      <workItem from="1657426759817" duration="1471000" />
+      <workItem from="1657461119468" duration="4074000" />
+      <workItem from="1657547427277" duration="4224000" />
+      <workItem from="1657631505397" duration="4497000" />
+      <workItem from="1657676352987" duration="597000" />
+      <workItem from="1657720616482" duration="8000" />
+      <workItem from="1657807810508" duration="2062000" />
+      <workItem from="1657811458136" duration="29000" />
+      <workItem from="1657934216113" duration="1677000" />
+      <workItem from="1657956113222" duration="17084000" />
+      <workItem from="1659623877533" duration="5328000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1649595557884</created>
@@ -332,7 +1140,224 @@
       <option name="project" value="LOCAL" />
       <updated>1649604867116</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit">
+      <created>1650385151006</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650385151007</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit">
+      <created>1650708209724</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650708209724</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit">
+      <created>1650784948021</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650784948021</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit">
+      <created>1652022471282</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652022471282</updated>
+    </task>
+    <task id="LOCAL-00010" summary="commit">
+      <created>1652022571616</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1652022571616</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit">
+      <created>1652022797959</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652022797959</updated>
+    </task>
+    <task id="LOCAL-00012" summary="인프런 파이썬 알고리즘 - 섹션 4">
+      <created>1654183583424</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1654183583424</updated>
+    </task>
+    <task id="LOCAL-00013" summary="인프런 파이썬 알고리즘 - 섹션 4">
+      <created>1654244980183</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1654244980183</updated>
+    </task>
+    <task id="LOCAL-00014" summary="인프런 파이썬 알고리즘 - 섹션 4">
+      <created>1654702445016</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1654702445016</updated>
+    </task>
+    <task id="LOCAL-00015" summary="인프런 파이썬 알고리즘 - 섹션 5">
+      <created>1654702461739</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1654702461739</updated>
+    </task>
+    <task id="LOCAL-00016" summary="인프런 파이썬 알고리즘 - 섹션 5">
+      <created>1654703487668</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1654703487668</updated>
+    </task>
+    <task id="LOCAL-00017" summary="인프런 파이썬 알고리즘 - 섹션 5">
+      <created>1654789889887</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1654789889887</updated>
+    </task>
+    <task id="LOCAL-00018" summary="인프런 파이썬 알고리즘 - 섹션 5">
+      <created>1654932463483</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1654932463483</updated>
+    </task>
+    <task id="LOCAL-00019" summary="그리디 알고리즘 - 거스름돈">
+      <created>1655652760496</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1655652760496</updated>
+    </task>
+    <task id="LOCAL-00020" summary="그리디 알고리즘 - 큰 수의 법칙">
+      <created>1655739476403</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1655739476403</updated>
+    </task>
+    <task id="LOCAL-00021" summary="그리디 알고리즘 - 큰 수의 법칙">
+      <created>1655822108054</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1655822108054</updated>
+    </task>
+    <task id="LOCAL-00022" summary="그리디 알고리즘 - 숫자 카드 게임">
+      <created>1655824391623</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1655824391623</updated>
+    </task>
+    <task id="LOCAL-00023" summary="그리디 알고리즘">
+      <created>1655824972252</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1655824972252</updated>
+    </task>
+    <task id="LOCAL-00024" summary="완전탐색">
+      <created>1656429849081</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1656429849081</updated>
+    </task>
+    <task id="LOCAL-00025" summary="완전탐색">
+      <created>1656517012269</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1656517012269</updated>
+    </task>
+    <task id="LOCAL-00026" summary="완전탐색">
+      <created>1657035532060</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1657035532060</updated>
+    </task>
+    <task id="LOCAL-00027" summary="완전탐색">
+      <created>1657126431836</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1657126431836</updated>
+    </task>
+    <task id="LOCAL-00028" summary="완전탐색">
+      <created>1657206615188</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1657206615188</updated>
+    </task>
+    <task id="LOCAL-00029" summary="완전탐색">
+      <created>1657206695307</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1657206695307</updated>
+    </task>
+    <task id="LOCAL-00030" summary="구현 - 게임 개발">
+      <created>1657341537941</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1657341537941</updated>
+    </task>
+    <task id="LOCAL-00031" summary="commit">
+      <created>1657467260133</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1657467260133</updated>
+    </task>
+    <task id="LOCAL-00032" summary="dfs/bfs">
+      <created>1657552723210</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1657552723210</updated>
+    </task>
+    <task id="LOCAL-00033" summary="정렬">
+      <created>1657639910552</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1657639910552</updated>
+    </task>
+    <task id="LOCAL-00034" summary="2022 KAKAO BLIND RECRUITMENT">
+      <created>1657811357097</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1657811357097</updated>
+    </task>
+    <task id="LOCAL-00035" summary="2022 KAKAO BLIND RECRUITMENT">
+      <created>1657811481418</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1657811481418</updated>
+    </task>
+    <task id="LOCAL-00036" summary="2022 KAKAO BLIND RECRUITMENT">
+      <created>1659629615223</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1659629615223</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,11 +1375,35 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="인프런 파이썬 알고리즘 - 섹션 4" />
+    <MESSAGE value="인프런 파이썬 알고리즘 - 섹션 5" />
+    <MESSAGE value="그리디 알고리즘 - 거스름돈" />
+    <MESSAGE value="그리디 알고리즘 - 큰 수의 법칙" />
+    <MESSAGE value="그리디 알고리즘 - 숫자 카드 게임" />
+    <MESSAGE value="그리디 알고리즘" />
+    <MESSAGE value="완전탐색" />
+    <MESSAGE value="구현 - 게임 개발" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="dfs/bfs" />
+    <MESSAGE value="정렬" />
+    <MESSAGE value="2022 KAKAO BLIND RECRUITMENT" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022 KAKAO BLIND RECRUITMENT" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/algorithm_python$_.coverage" NAME="격자판 최대합 Coverage Results" MODIFIED="1650384953432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
-    <SUITE FILE_PATH="coverage/algorithm_python$__.coverage" NAME="두 리스트 합치기 Coverage Results" MODIFIED="1650213187463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/test/tutorial/색션 3" />
+    <SUITE FILE_PATH="coverage/algorithm_python$1__.coverage" NAME="1이 될 때까지 Coverage Results" MODIFIED="1655824909335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/coding/그리디" />
+    <SUITE FILE_PATH="coverage/algorithm_python$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1657984386448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
+    <SUITE FILE_PATH="coverage/algorithm_python$dfs.coverage" NAME="dfs Coverage Results" MODIFIED="1657367762767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/coding/DFS" />
+    <SUITE FILE_PATH="coverage/algorithm_python$____.coverage" NAME="재귀 함수로 구현한 이진 탐색 Coverage Results" MODIFIED="1657964750749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/coding/이진탐색" />
+    <SUITE FILE_PATH="coverage/algorithm_python$1_.coverage" NAME="1로 만들기 Coverage Results" MODIFIED="1657973488602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/coding/다이나믹 프로그래밍" />
+    <SUITE FILE_PATH="coverage/algorithm_python$test.coverage" NAME="test Coverage Results" MODIFIED="1657975465930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
+    <SUITE FILE_PATH="coverage/algorithm_python$_.coverage" NAME="좌표 압축 Coverage Results" MODIFIED="1659629492703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/Baejoon/sorting" />
+    <SUITE FILE_PATH="coverage/algorithm_python$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1657982782357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
+    <SUITE FILE_PATH="coverage/algorithm_python$_2.coverage" NAME="침몰하는 타이타닉2 Coverage Results" MODIFIED="1654182931770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/tutorial/색션 4" />
+    <SUITE FILE_PATH="coverage/algorithm_python$2696__.coverage" NAME="2696번 중앙값 구하기 Coverage Results" MODIFIED="1657465148536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/Baejoon" />
+    <SUITE FILE_PATH="coverage/algorithm_python$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1657984827173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
+    <SUITE FILE_PATH="coverage/algorithm_python$.coverage" NAME="재귀함수 Coverage Results" MODIFIED="1657367769203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/coding/DFS" />
+    <SUITE FILE_PATH="coverage/algorithm_python$__.coverage" NAME="떡볶이 떡 만들기 Coverage Results" MODIFIED="1657968449628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/coding/이진탐색" />
+    <SUITE FILE_PATH="coverage/algorithm_python$bfs.coverage" NAME="bfs Coverage Results" MODIFIED="1657367746582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/coding/DFS" />
+    <SUITE FILE_PATH="coverage/algorithm_python$___.coverage" NAME="두 배열의 원소 교체 Coverage Results" MODIFIED="1657720621623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/coding/정렬" />
   </component>
 </project>
