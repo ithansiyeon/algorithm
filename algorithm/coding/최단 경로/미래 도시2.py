@@ -21,7 +21,7 @@ for k in range(1,n+1):
         for b in range(1,n+1):
             graph[a][b] = min(graph[a][b],graph[a][k]+graph[k][b])
 
-cost = graph[1][k] + graph[k][x]
+cost = graph[1][k] + graph[x][k]
 
 if cost >= INF:
     print(-1)
