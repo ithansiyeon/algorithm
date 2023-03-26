@@ -1,5 +1,4 @@
 package algorithm.Programmers.LEVEL3;
-import java.util.*;
 
 class Solution {
 
