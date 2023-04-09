@@ -2,7 +2,6 @@ package algorithm.Programmers.LEVEL3;
 
 class Solution {
     public int solution(int sticker[]) {
-        int answer = 0;
         int l = sticker.length;
 
         if(l==1) {
